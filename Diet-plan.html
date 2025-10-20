@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness & Health Center</title>
+    <link rel="icon" type="image/x-icon" href="./logo/Fitness & Health Center 1.jpg">
+    <style>
+        body{background-color: gray;}
+        .Diet-Plan
+        {
+            border: 1px solid gray;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-image: url("./Diet-plan/diet-plan-background-img.jpg");
+            width: 100%;
+            height: 675px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .Diet-Plan h1
+        {
+            text-align: center;
+            color: white;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: xx-large;
+        }
+        .Diet-Plan .Diet-Plan-1
+        {
+            
+border: 1px solid black;
+border-radius: 50px;
+display: flex;
+display: grid;
+flex-wrap: wrap;
+align-items: center;
+justify-items: center;
+width: 600px;
+height: 350px;
+column-gap: 10px;
+row-gap: 10px;
+grid-template-columns: repeat(3,1fr);
+padding: 50px 50px 50px 50px;
+border: none;
+backdrop-filter: blur(20px);
+        }
+        .Diet-Plan-1 .Keto
+{
+   border: 1px solid black;
+   border-radius: 20px;
+   width: 100px;
+   height: 100px;
+   text-align: center;
+   border: none;
+   box-shadow: 5px 5px 5px ;
+   
+}
+.Keto img {border-radius: 20px;}
+.Keto a{text-decoration: none;}
+.Keto h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white; font-size: medium; }
+.Keto:hover
+{
+   transform: scaley(1.1) scaleX(1.1);
+   color: red;
+}
+.Diet-Plan-1 .paleo
+{
+   border: 1px solid black;
+   border-radius: 20px;
+   width: 100px;
+   height: 100px;
+   text-align: center;
+   border: none;
+   box-shadow: 5px 5px 5px ;
+   
+}
+.paleo img {border-radius: 20px;}
+.paleo a{text-decoration: none;}
+.paleo h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white;font-size: medium; }
+.paleo:hover
+{
+   transform: scaley(1.1) scaleX(1.1);
+   color: red;
+}
+.Diet-Plan-1 .plant
+{
+   border: 1px solid black;
+   border-radius: 20px;
+   width: 100px;
+   height: 100px;
+   text-align: center;
+   border: none;
+   box-shadow: 5px 5px 5px ;
+   
+}
+.plant img {border-radius: 20px;}
+.plant a{text-decoration: none;}
+.plant h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white;font-size: medium; }
+.plant:hover
+{
+   transform: scaley(1.1) scaleX(1.1);
+   color: red;
+}
+.Diet-Plan-1 .mediterranean
+{
+   border: 1px solid black;
+   border-radius: 20px;
+   width: 100px;
+   height: 100px;
+   text-align: center;
+   border: none;
+   box-shadow: 5px 5px 5px ;
+   
+}
+.mediterranean img {border-radius: 20px;}
+.mediterranean a{text-decoration: none;}
+.mediterranean h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white;font-size: medium; }
+.mediterranean:hover
+{
+   transform: scaley(1.1) scaleX(1.1);
+   color: red;
+}
+.Diet-Plan-1 .DASH
+{
+   border: 1px solid black;
+   border-radius: 20px;
+   width: 100px;
+   height: 100px;
+   text-align: center;
+   border: none;
+   box-shadow: 5px 5px 5px ;
+   
+}
+.DASH img {border-radius: 20px;}
+.DASH a{text-decoration: none;}
+.DASH h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white;font-size: medium; }
+.DASH:hover
+{
+   transform: scaley(1.1) scaleX(1.1);
+   color: red;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) 
+{
+   .Diet-Plan
+        {
+            border: 1px solid gray;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-image: url("./Diet-plan/diet-plan-background-img.jpg");
+            width: 100%;
+            height: 700px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .Diet-Plan h1
+        {
+            text-align: center;
+            color: white;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 90%;
+        }
+        .Diet-Plan .Diet-Plan-1
+        {
+            
+border: 1px solid black;
+border-radius: 50px;
+display: flex;
+display: grid;
+flex-wrap: wrap;
+align-items: center;
+justify-items: center;
+width: 200px;
+height: 400px;
+column-gap: 10px;
+grid-template-columns: repeat(2,1fr);
+border: none;
+backdrop-filter: blur(20px);
+margin-bottom: 200px;
+        }
+}
+</style>
+</head>
+<body>
+    <div class="Diet-Plan">
+        <h1>Choose Your Diet-Plan</h1>
+        <div class="Diet-Plan-1">
+            <div class="Keto"><a href="Ketodiet-plan.html"><img src="./Diet-plan/image.jpg" alt="" height="100" width="100"><h1>Keto Diet</h1></a></div>
+              <div class="paleo"><a href="paleodiet-plan.html"><img src="./Diet-plan/paleo.jpg" alt=""height="100" width="100"><h1>Paleo Diet</h1></a></div>
+              <div class="plant"><a href="plant-based-diet.html"><img src="./Diet-plan/Plant-Based-diet.jpg" alt=""height="100" width="100"><h1>Plant-Based-Diet</h1></a></div>
+              <!-- <div class="mediterranean"><a href=""><img src="./Diet-plan/mediterranean.webp" alt=""height="100" width="100"><h1>Mediterranean Diet</h1></a></div>
+              <div class="DASH"><a href=""><img src="./Diet-plan/dash.webp" alt=""height="100" width="100"><h1>DASH Diet</h1></a></div> -->
+        </div>
+    </div>
+</body>
+</html>

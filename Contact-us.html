@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness & Health Center</title>
+    <link rel="icon" type="image/x-icon" href="./logo/Fitness & Health Center 1.jpg">
+    <style>
+        body
+        {
+           background-color: gray;
+            
+        }
+        .contact
+        {
+            border: 1px solid gray;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-image: url("./gym-backgrund-img/2d.jpg");
+            width: 100%;
+            height: 675px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+        .contact .contact-1
+        {
+           width: 300px;
+           color: whitesmoke;
+           border-radius: 20px;
+           padding: 30px 40px;
+           backdrop-filter: blur(20px);
+           
+        }
+        .contact-1 h1{
+            text-align: center ;
+        }
+        .contact-1 .input-box
+        {
+            background: white;
+            height: 50px;
+            display: flex;
+            margin:30px 0 ;
+            border-radius: 40px;
+
+        }
+        .input-box .user
+        {
+            width: 80%;
+        }
+        .input-box .icon
+        {
+            width: 20%;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .input-box input
+        {
+        
+         width: 100%;
+         height: 40px;
+         background: white;
+         border: none;
+         outline: none;
+         border: 1px solid rgba(255,255, 255, .2);
+         border-radius: 40px;
+         text-align: center;
+        }
+        .message textarea
+        {
+            border-radius: 30px;
+            margin-right: 30px;
+        }
+        .contact-1 .btn
+        {
+            width: 100%;
+            height: 45px;
+            background: white;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        @media screen and (min-width: 320px) and (max-width: 480px)
+        {
+            .contact
+        {
+            border: 1px solid gray;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-image: url("./gym-backgrund-img/2d.jpg");
+            width: 100%;
+            height: 700px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+        .contact .contact-1
+        {
+           width: 200px;
+           height: 500px;
+           color: whitesmoke;
+           border-radius: 20px;
+           padding: 30px 40px;
+           backdrop-filter: blur(20px);
+           
+        }
+        .message textarea
+        {
+            height: 100px;
+            width: 200px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <div class="contact-1">
+          <form action="">
+              <h1>Contact Us</h1>
+              <div class="input-box">
+                  <div class="user"><input type="text" placeholder="Username"></div>
+                  <div class="icon"><img src="./icon/user.png" height="15px" width="15px"></div>
+              </div>
+              <div class="input-box">
+                  <div class="user"><input type="Email" placeholder="Email"></div>
+                  <div class="icon"><img src="./icon/icons8-email-48.png" height="15px" width="15px"></div>
+              </div>
+              <div class="message">
+              <h4>Messages</h4>
+        <textarea rows="10" cols="40"></textarea>
+             </div>
+              <button type="submit" class="btn">submit</button>
+          </form>
+        </div>
+      </div>
+</body>
+</html>
