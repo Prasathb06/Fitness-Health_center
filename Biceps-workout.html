@@ -1,633 +1,643 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Fitness & Health Center</title>
-    <link rel="icon" type="image/x-icon" href="./logo/Fitness & Health Center 1.jpg">
-    <style>
-             body
-        {
-            background-color: gray;
-        }
-        .container
-        {
-      position:sticky;
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Fitness & Health Center</title>
+   <link rel="icon" type="image/x-icon" href="./logo/Fitness & Health Center 1.jpg">
+   <style>
+      body {
+         background-color: gray;
+      }
+
+      .container {
+         position: sticky;
          border: 1px solid blue;
          border: none;
          background-color: black;
-        height: 100px;
-        display: grid;
-        display: flex;
-        column-gap: 80px;
-        justify-items: start;
-        align-items: center;
-        border-bottom-right-radius: 150px;
-        }
-        .container .brand
-        {
+         height: 100px;
+         display: grid;
+         display: flex;
+         column-gap: 80px;
+         justify-items: start;
+         align-items: center;
+         border-bottom-right-radius: 150px;
+      }
+
+      .container .brand {
          border: 1px solid blue;
          border: none;
          width: 300px;
          height: 100px;
          color: white;
          text-align: center;
-        }
-       .container .main-menu
-      {
+      }
+
+      .container .main-menu {
          border: 1px solid blue;
          border: none;
-        height: 100px;
-        width: 900px;
-        display: grid;
-        display: flex;
-        justify-items: start;
-        align-items: center;
-        column-gap: 40px;
-      } 
-      .main-menu .menu
-{
-    border: 1px solid blue; 
-    border: none;
- color: white;
- display: flex;
- list-style: none;
- column-gap: 50px;
-}
-.menu .item1 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item1 :hover
-{
-   color: red;
+         height: 100px;
+         width: 900px;
+         display: grid;
+         display: flex;
+         justify-items: start;
+         align-items: center;
+         column-gap: 40px;
+      }
 
-}
-.menu .item2 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item2 :hover
-{
-   color: red;
-}
-.menu .item3 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item3 :hover
-{
-   color: red;
-}
-.menu .item4 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item4 :hover
-{
-   color: red;
-}
-.menu .item5 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item5 :hover
-{
-   color: red;
-}
-.menu .item6 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none; 
-}
-.menu .item6 :hover
-{
-   color: red;
-}
-.menu .item7 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none; 
-}
-.menu .item7 :hover
-{
-   color: red;
-}
-.menu .item8 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item8 :hover
-{
-   
-   color: red;
-}
-.main-menu .bar
-{
-   
-   border: 1px solid blue;
-   border: none;
-   cursor: pointer;
-   display: none;
-   background-color: white;  
-}
-.sidebar
-        {
-        background-color: black;
-        display: none;
-        width: 300px;
-        height: 600px;
-        border-bottom-right-radius: 150px;
-       
-        }
-        .sidebar .b
-        {
+      .main-menu .menu {
+         border: 1px solid blue;
+         border: none;
+         color: white;
+         display: flex;
+         list-style: none;
+         column-gap: 50px;
+      }
+
+      .menu .item1 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item1 :hover {
+         color: red;
+
+      }
+
+      .menu .item2 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item2 :hover {
+         color: red;
+      }
+
+      .menu .item3 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item3 :hover {
+         color: red;
+      }
+
+      .menu .item4 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item4 :hover {
+         color: red;
+      }
+
+      .menu .item5 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item5 :hover {
+         color: red;
+      }
+
+      .menu .item6 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item6 :hover {
+         color: red;
+      }
+
+      .menu .item7 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item7 :hover {
+         color: red;
+      }
+
+      .menu .item8 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item8 :hover {
+
+         color: red;
+      }
+
+      .main-menu .bar {
+
+         border: 1px solid blue;
+         border: none;
+         cursor: pointer;
+         display: none;
+         background-color: white;
+      }
+
+      .sidebar {
+         background-color: black;
+         display: none;
+         width: 300px;
+         height: 600px;
+         border-bottom-right-radius: 150px;
+
+      }
+
+      .sidebar .b {
          width: 300px;
          height: 100px;
          color: white;
          text-align: center;
-        }
-       
-      .mm .m
-{
-    border: 1px solid blue; 
-    border: none;
- color: white;
- display: flex;
- flex-direction: column;
- list-style: none;
- row-gap: 40px; 
-}
-.m .item9 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item9 :hover
-{
-   color: red;
+      }
 
-}
-.m .item10 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item10 :hover
-{
-   color: red;
-}
-.m .item11 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item11 :hover
-{
-   color: red;
-}
-.m .item12 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item12 :hover
-{
-   color: red;
-}
-.m .item13 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item13 :hover
-{
-   color: red;
-}
-.m .item14 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none; 
-}
-.m .item14 :hover
-{
-   color: red;
-}
-.m .item15 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none; 
-}
-.m .item15 :hover
-{
-   color: red;
-}
-.m .item16 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item16 :hover
-{
-   
-   color: red;
-}
-.main-footer
-{
-   /* width: 99%; */
-   /* height: 300px; */
-    border: 1px solid gray;
-    display: flex;
-    border-top-left-radius: 150px;
-    column-gap: 200px;
-    background-color: black;  
-     
-}
-.main-footer .footer-1
-    {
-      border: 1px solid white;
-      border: none;
-      color: white;
-      /* height: 300px;
+      .mm .m {
+         border: 1px solid blue;
+         border: none;
+         color: white;
+         display: flex;
+         flex-direction: column;
+         list-style: none;
+         row-gap: 40px;
+      }
+
+      .m .item9 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item9 :hover {
+         color: red;
+
+      }
+
+      .m .item10 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item10 :hover {
+         color: red;
+      }
+
+      .m .item11 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item11 :hover {
+         color: red;
+      }
+
+      .m .item12 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item12 :hover {
+         color: red;
+      }
+
+      .m .item13 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item13 :hover {
+         color: red;
+      }
+
+      .m .item14 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item14 :hover {
+         color: red;
+      }
+
+      .m .item15 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item15 :hover {
+         color: red;
+      }
+
+      .m .item16 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item16 :hover {
+
+         color: red;
+      }
+
+      .main-footer {
+         /* width: 99%; */
+         /* height: 300px; */
+         border: 1px solid gray;
+         display: flex;
+         border-top-left-radius: 150px;
+         column-gap: 200px;
+         background-color: black;
+
+      }
+
+      .main-footer .footer-1 {
+         border: 1px solid white;
+         border: none;
+         color: white;
+         /* height: 300px;
       width: 300px; */
-      animation-name: footer-1-animation;
-               animation-duration: 5s;
-      animation-iteration-count: infinite;
-    }
-    .footer-1 .mylogo{border-radius: 150px;}
-    @keyframes footer-1-animation
-{
-   from
-   {
-   transform: scale(0);
-   }
-   to
-   {
-     transform: scale(1);
-   }
-}
-.main-footer .footer-2
-{
-   border: 1px solid white;
-   border: none; 
-   display: grid;
-   justify-content: center;
-   align-content: center;
-   /* width: 99%; */
-    /* padding: 70px 0px 20px; */
-}
-.footer-2 .social-icon
-{
-   display: flex;
-   justify-content: center;
-}
-.social-icon a
-{
-text-decoration: none;
-padding: 10px;
-background-color: white;
-margin: 10px;
-border-radius: 50px;
-}
-.social-icon a i
-{
-   font-size: 2am;
-   color: black;
-   opacity: 0.9;
-}
-.social-icon a:hover
-{
-   background-color: #111;
-   transition: 0.5s;
-}
-.social-icon a:hover i
-{
-color: white;
-transition: 0.5s;
-}
-.footer-nav
-{
-   margin:30px 0 ;
-}
-.footer-nav ul
-{
-display: flex;
-justify-content: center;
-}
-.footer-nav ul li a
-{
-   color: white;
-   margin: 20px;
-   text-decoration: none;
-   font-size: 1.3am;
-   opacity: 0.7;
-   transition: 0.5s;
-}
-.footer-nav ul li a:hover
-{
-   opacity: 1;
-}
-.footer-bottom
-{
-   background-color: black;
-   padding: 20px;
-   text-align: center;
-}
-.footer-bottom p
-{
-color: white;
-}
-.designer
-{
-   opacity: 0.7;
-   letter-spacing: 1px;
-   font-weight: 400;
-   margin: 0px 5px;
-}
-.container-1
-{
-    border: 1px solid;
-   /* width: 99%; */
-    /* height: 100%; */
-    border: none;
-    text-align: justify;
-    padding: 20px 0px 20px 0px;
-    flex-wrap: wrap;
-    font-size: 20px;
-    backdrop-filter: blur(20px);
-    margin: 0% 11% 0% 10%;
-}
-.container-1 img
-{
-border-radius: 30px;
-}
-.container-1 p
-{
-    text-indent: 55px;
-}
-p::first-letter
-{
-    font-size: 25px;
-}
-@media screen and (min-width: 320px) and (max-width: 480px)
-{  
-   .container
-   {
-      
-    height: 50px;
-    border-bottom-right-radius: 0px;
-   }
-  .container .brand
-  {
-   font-size: 20%;
-   margin-top: 70px;
-   width: 300px;
-  }
-  /* .container .main-menu
+         animation-name: footer-1-animation;
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
+      }
+
+      .footer-1 .mylogo {
+         border-radius: 150px;
+      }
+
+      @keyframes footer-1-animation {
+         from {
+            transform: scale(0);
+         }
+
+         to {
+            transform: scale(1);
+         }
+      }
+
+      .main-footer .footer-2 {
+         border: 1px solid white;
+         border: none;
+         display: grid;
+         justify-content: center;
+         align-content: center;
+         /* width: 99%; */
+         /* padding: 70px 0px 20px; */
+      }
+
+      .footer-2 .social-icon {
+         display: flex;
+         justify-content: center;
+      }
+
+      .social-icon a {
+         text-decoration: none;
+         padding: 10px;
+         background-color: white;
+         margin: 10px;
+         border-radius: 50px;
+      }
+
+      .social-icon a i {
+         font-size: 2am;
+         color: black;
+         opacity: 0.9;
+      }
+
+      .social-icon a:hover {
+         background-color: #111;
+         transition: 0.5s;
+      }
+
+      .social-icon a:hover i {
+         color: white;
+         transition: 0.5s;
+      }
+
+      .footer-nav {
+         margin: 30px 0;
+      }
+
+      .footer-nav ul {
+         display: flex;
+         justify-content: center;
+      }
+
+      .footer-nav ul li a {
+         color: white;
+         margin: 20px;
+         text-decoration: none;
+         font-size: 1.3am;
+         opacity: 0.7;
+         transition: 0.5s;
+      }
+
+      .footer-nav ul li a:hover {
+         opacity: 1;
+      }
+
+      .footer-bottom {
+         background-color: black;
+         padding: 20px;
+         text-align: center;
+      }
+
+      .footer-bottom p {
+         color: white;
+      }
+
+      .designer {
+         opacity: 0.7;
+         letter-spacing: 1px;
+         font-weight: 400;
+         margin: 0px 5px;
+      }
+
+      .container-1 {
+         border: 1px solid;
+         /* width: 99%; */
+         /* height: 100%; */
+         border: none;
+         text-align: justify;
+         padding: 20px 0px 20px 0px;
+         flex-wrap: wrap;
+         font-size: 20px;
+         backdrop-filter: blur(20px);
+         margin: 0% 11% 0% 10%;
+      }
+
+      .container-1 img {
+         border-radius: 30px;
+      }
+
+      .container-1 p {
+         text-indent: 55px;
+      }
+
+      p::first-letter {
+         font-size: 25px;
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 480px) {
+         .container {
+
+            height: 50px;
+            border-bottom-right-radius: 0px;
+         }
+
+         .container .brand {
+            font-size: 20%;
+            margin-top: 70px;
+            width: 300px;
+         }
+
+         /* .container .main-menu
   {
     
   } */
-  .main-menu .menu
-  {
-   display: none;
-  }
-  .main-menu .bar
-  {
-   font-size: 50%;
-   margin-left: 110px;
-   margin-top: 10px;
-    display: block;
-    margin-bottom: 20px;
-  }
-  .sidebar
-  {
-   height: 200px;
-   width: 305px;
-   border-bottom-right-radius: 50px;
-  }
-  .sidebar .mm .xbar
-      {
-      margin-left: 100px;
-      color: white;
-      } 
-  .mm .m
-  {
-   row-gap: 3px;
-  }
-  .mm .m .item9 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item10 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item11 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item12 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item13 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item14 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item15 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item16 a
-  {
-   font-size: 10%;
-  }
-.container-1
-{
-   font-size: small;
-}
-.container-1 h1
-{
-   font-size: large;
-   font-weight:900;
-   
-}
-.container-1 img
-{
-   width: 200px;
-   height: 200px;
-}
-.container-1 p
-{
-    text-indent: 55px;
-}
-p::first-letter
-{
-    font-size: 25px;
-}
-.main-footer
-{
-   /* width: 925px;  */
-   height: 200px;
-    border: 1px solid gray;
-    display: flex;
-    border-top-left-radius: 50px;
-    column-gap: 00px;
-    margin-top: 50px;
-    background-color: black;  
-     
-}
-.main-footer .footer-1
-    {
-      border: 1px solid white;
-      border: none;
-      color: white;
-      /* height: 300px;
-      width: 300px; */
-      animation-name: footer-1-animation;
-               animation-duration: 5s;
-      animation-iteration-count: infinite;
-    }
-    .footer-1 .mylogo{ margin-top: 50px; margin-left: 40px; border-radius: 70px; height: 100px;width: 100px;}
-    @keyframes footer-1-animation
-{
-   from
-   {
-   transform: scale(0);
-   }
-   to
-   {
-     transform: scale(1);
-   }
-}
-.main-footer .footer-2
-{
-   border: 1px solid white;
-   border: none; 
-   display: grid;
-   justify-content: center;
-   align-content: center;
-   /* width: 70%; */
-    /* padding: 70px 0px 20px; */
-}
-.footer-2 .social-icon
-{
-   display: flex;
-   justify-content: center;
-   margin:10px 0px 0px 20px ;
-}
-.social-icon a
-{
-text-decoration: none;
-padding: 3px;
-background-color: white;
-/* margin: 5px; */
-border-radius: 5px;
-}
-.social-icon a i
-{
-   font-size: 10px;
-   color: black;
-   opacity: 0.9;
-}
-.social-icon a:hover
-{
-   background-color: #111;
-   transition: 0.5s;
-}
-.social-icon a:hover i
-{
-color: white;
-transition: 0.5s;
-}
-.footer-nav
-{
-   margin:10px 0px 0px 20px ;
-}
-.footer-nav ul
-{
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
-.footer-nav ul li a
-{
-   
-   margin: 5px;
-   font-size: 10px;
-}
-.footer-bottom
-{
-   background-color: black;
-   padding: 20px;
-   text-align: center;
-}
-.footer-bottom p
-{
-color: white;
-font-size: 10px;
-}
-.designer
-{
-   opacity: 0.7;
-   letter-spacing: 1px;
-   font-weight: 100;
-   margin: 0px 5px;
-}
-}
+         .main-menu .menu {
+            display: none;
+         }
 
-    </style>
+         .main-menu .bar {
+            font-size: 50%;
+            margin-left: 110px;
+            margin-top: 10px;
+            display: block;
+            margin-bottom: 20px;
+         }
+
+         .sidebar {
+            height: 200px;
+            width: 305px;
+            border-bottom-right-radius: 50px;
+         }
+
+         .sidebar .mm .xbar {
+            margin-left: 100px;
+            color: white;
+         }
+
+         .mm .m {
+            row-gap: 3px;
+         }
+
+         .mm .m .item9 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item10 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item11 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item12 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item13 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item14 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item15 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item16 a {
+            font-size: 10%;
+         }
+
+         .container-1 {
+            font-size: small;
+         }
+
+         .container-1 h1 {
+            font-size: large;
+            font-weight: 900;
+
+         }
+
+         .container-1 img {
+            width: 200px;
+            height: 200px;
+         }
+
+         .container-1 p {
+            text-indent: 55px;
+         }
+
+         p::first-letter {
+            font-size: 25px;
+         }
+
+         .main-footer {
+            /* width: 925px;  */
+            height: 200px;
+            border: 1px solid gray;
+            display: flex;
+            border-top-left-radius: 50px;
+            column-gap: 00px;
+            margin-top: 50px;
+            background-color: black;
+
+         }
+
+         .main-footer .footer-1 {
+            border: 1px solid white;
+            border: none;
+            color: white;
+            /* height: 300px;
+      width: 300px; */
+            animation-name: footer-1-animation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+         }
+
+         .footer-1 .mylogo {
+            margin-top: 50px;
+            margin-left: 40px;
+            border-radius: 70px;
+            height: 100px;
+            width: 100px;
+         }
+
+         @keyframes footer-1-animation {
+            from {
+               transform: scale(0);
+            }
+
+            to {
+               transform: scale(1);
+            }
+         }
+
+         .main-footer .footer-2 {
+            border: 1px solid white;
+            border: none;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            /* width: 70%; */
+            /* padding: 70px 0px 20px; */
+         }
+
+         .footer-2 .social-icon {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0px 0px 20px;
+         }
+
+         .social-icon a {
+            text-decoration: none;
+            padding: 3px;
+            background-color: white;
+            /* margin: 5px; */
+            border-radius: 5px;
+         }
+
+         .social-icon a i {
+            font-size: 10px;
+            color: black;
+            opacity: 0.9;
+         }
+
+         .social-icon a:hover {
+            background-color: #111;
+            transition: 0.5s;
+         }
+
+         .social-icon a:hover i {
+            color: white;
+            transition: 0.5s;
+         }
+
+         .footer-nav {
+            margin: 10px 0px 0px 20px;
+         }
+
+         .footer-nav ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+         }
+
+         .footer-nav ul li a {
+
+            margin: 5px;
+            font-size: 10px;
+         }
+
+         .footer-bottom {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+         }
+
+         .footer-bottom p {
+            color: white;
+            font-size: 10px;
+         }
+
+         .designer {
+            opacity: 0.7;
+            letter-spacing: 1px;
+            font-weight: 100;
+            margin: 0px 5px;
+         }
+      }
+   </style>
 </head>
+
 <body>
-    <div class="container">
-      <div class="brand"><h1>Fitness & health <br> Center</h1></div>
-      <div class="main-menu">
-        <ul class="menu">
-         <li class="item1"><a href="My-project.html">Home</a></li>
-         <li class="item2"><a href="workouts.html">Workout</a></li>
-         <!-- <li class="item3"><a href="">Home-Workout</a></li> -->
-         <li class="item4"><a href="Cardio.html">Cardio</a></li>
-         <li class="item5"><a href="Mobility.html">Mobility</a></li>
-         <li class="item6"><a href="Yoga.html">Yoga</a></li>
-         <li class="item7"><a href="Diet-plan.html">Diet-Plan</a></li>
-         <li class="item8"><a href="Diet-Recipes.html">Diet-Food</a></li>
-        </ul>
-        <div class="bar" onclick=showsidebar()><i class="fa-solid fa-bars"></i></div>
+   <div class="container">
+      <div class="brand">
+         <h1>Fitness & health <br> Center</h1>
       </div>
-       </div>
-       <div class="sidebar">
-         <div class="mm">
-            <div class="xbar"><i onclick=hidesidebar() class="fa-solid fa-xmark"></i></div>
-           <ul class="m">
-            <li class="item9"><a href="My-project.html">Home</a></li>
+      <div class="main-menu">
+         <ul class="menu">
+            <li class="item1"><a href="index.html">Home</a></li>
+            <li class="item2"><a href="workouts.html">Workout</a></li>
+            <!-- <li class="item3"><a href="">Home-Workout</a></li> -->
+            <li class="item4"><a href="Cardio.html">Cardio</a></li>
+            <li class="item5"><a href="Mobility.html">Mobility</a></li>
+            <li class="item6"><a href="Yoga.html">Yoga</a></li>
+            <li class="item7"><a href="Diet-plan.html">Diet-Plan</a></li>
+            <li class="item8"><a href="Diet-Recipes.html">Diet-Food</a></li>
+         </ul>
+         <div class="bar" onclick=showsidebar()><i class="fa-solid fa-bars"></i></div>
+      </div>
+   </div>
+   <div class="sidebar">
+      <div class="mm">
+         <div class="xbar"><i onclick=hidesidebar() class="fa-solid fa-xmark"></i></div>
+         <ul class="m">
+            <li class="item9"><a href="index.html">Home</a></li>
             <li class="item10"><a href="workouts.html">Workout</a></li>
             <!-- <li class="item3"><a href="">Home-Workout</a></li> -->
             <li class="item11"><a href="Cardio.html">Cardio</a></li>
@@ -635,127 +645,132 @@ font-size: 10px;
             <li class="item13"><a href="Yoga.html">Yoga</a></li>
             <li class="item14"><a href="Diet-plan.html">Diet-Plan</a></li>
             <li class="item15"><a href="Diet-Recipes.html">Diet-Food</a></li>
-           </ul>
-         </div>
-          </div>
-          <script>
-            function showsidebar()
-             {
-               const sidebar = document.querySelector('.sidebar')
-               sidebar.style.display ='flex'
-            }
-            function hidesidebar()
-             {
-               const sidebar = document.querySelector('.sidebar')
-               sidebar.style.display ='none'
-            }
-   
-          </script>
-        <div class="container-1">
-            <h1>Top 10 Best Biceps Workout Exercises for Building Muscle</h1>
-            <p>A strong biceps muscle can better support the surrounding tendons and ligaments, promoting joint stability and health. Arm curls can help improve joint mobility in the elbow and shoulder, which is essential for maintaining overall upper body flexibility.
-                Certainly! Here's a list of effective bicep workouts that you can incorporate into your routine for well-rounded bicep development:
-                </p>
+         </ul>
+      </div>
+   </div>
+   <script>
+      function showsidebar() {
+         const sidebar = document.querySelector('.sidebar')
+         sidebar.style.display = 'flex'
+      }
+      function hidesidebar() {
+         const sidebar = document.querySelector('.sidebar')
+         sidebar.style.display = 'none'
+      }
 
-            <h2>1. Barbell Bicep Curl:</h2>
-            <img src="./Biceps-workouts/Barbell-Bicep-Curl.gif" alt="" height="300" width="300">
-<p>
-    Stand with feet shoulder-width apart, grip a barbell with hands shoulder-width apart.
-    Keep elbows close to your torso and curl the barbell toward your chest.
-</p> 
+   </script>
+   <div class="container-1">
+      <h1>Top 10 Best Biceps Workout Exercises for Building Muscle</h1>
+      <p>A strong biceps muscle can better support the surrounding tendons and ligaments, promoting joint stability and
+         health. Arm curls can help improve joint mobility in the elbow and shoulder, which is essential for maintaining
+         overall upper body flexibility.
+         Certainly! Here's a list of effective bicep workouts that you can incorporate into your routine for
+         well-rounded bicep development:
+      </p>
 
-   <h2>2. Dumbbell Bicep Curl:</h2>
-   <img src="./Biceps-workouts/Dumbbell-Bicep-Curl.gif" alt="" height="300" width="300">
-<p>
-    Stand with a dumbbell in each hand, palms facing forward.
-     Curl the dumbbells toward your shoulders while keeping your elbows close to your body.
- </p> 
+      <h2>1. Barbell Bicep Curl:</h2>
+      <img src="./Biceps-workouts/Barbell-Bicep-Curl.gif" alt="" height="300" width="300">
+      <p>
+         Stand with feet shoulder-width apart, grip a barbell with hands shoulder-width apart.
+         Keep elbows close to your torso and curl the barbell toward your chest.
+      </p>
 
-    <h2>3. Hammer Curl:</h2>
-    <img src="./Biceps-workouts/Hammer-Curl.gif" alt="" height="300" width="300">
-    <p>
-        Similar to regular dumbbell curls but with a neutral grip (palms facing each other).
-        This variation targets both the biceps and the brachialis.
-    </p> 
+      <h2>2. Dumbbell Bicep Curl:</h2>
+      <img src="./Biceps-workouts/Dumbbell-Bicep-Curl.gif" alt="" height="300" width="300">
+      <p>
+         Stand with a dumbbell in each hand, palms facing forward.
+         Curl the dumbbells toward your shoulders while keeping your elbows close to your body.
+      </p>
 
-    <h2>4. Concentration Curl:</h2>
-    <img src="./Biceps-workouts/dumbbell-concentration-curl.gif" alt="" height="300" width="300">
-<p>
-    Sit on a bench, hold a dumbbell in one hand, and rest your elbow against your inner thigh.
-    Curl the dumbbell towards your shoulder, isolating the bicep.
-</p> 
+      <h2>3. Hammer Curl:</h2>
+      <img src="./Biceps-workouts/Hammer-Curl.gif" alt="" height="300" width="300">
+      <p>
+         Similar to regular dumbbell curls but with a neutral grip (palms facing each other).
+         This variation targets both the biceps and the brachialis.
+      </p>
 
-<h2>5. Preacher Curl:</h2> 
-<img src="./Biceps-workouts/barbell-preacher-curl.gif" alt="" height="300" width="300">
-   <p>
-    Use a preacher curl bench or pad.
-     Rest your arms on the pad and perform curls, emphasizing the peak contraction of the biceps.
- 
- </p> 
+      <h2>4. Concentration Curl:</h2>
+      <img src="./Biceps-workouts/dumbbell-concentration-curl.gif" alt="" height="300" width="300">
+      <p>
+         Sit on a bench, hold a dumbbell in one hand, and rest your elbow against your inner thigh.
+         Curl the dumbbell towards your shoulder, isolating the bicep.
+      </p>
 
-<h2>6. Spider Curl:</h2> 
-<img src="./Biceps-workouts/Spider-Curl.webp" alt="" height="300" width="300">
-   <p>
-    Lie face down on an incline bench, allowing your arms to hang straight down.
-   Curl the barbell or dumbbells toward your forehead, keeping your upper arms perpendicular to the ground.
-</p> 
+      <h2>5. Preacher Curl:</h2>
+      <img src="./Biceps-workouts/barbell-preacher-curl.gif" alt="" height="300" width="300">
+      <p>
+         Use a preacher curl bench or pad.
+         Rest your arms on the pad and perform curls, emphasizing the peak contraction of the biceps.
 
-<h2>7. EZ Bar Curl:</h2> 
-<img src="./Biceps-workouts/EZ-Bar-Curl.gif" alt="" height="300" width="300">
-  <p>
-    Use an EZ curl bar, which has a curved shape.
-    This grip can be more wrist-friendly and allows for a different angle of stress on the biceps.
-</p> 
+      </p>
 
-<h2>8. 21s:</h2> 
-<img src="./Biceps-workouts/barbell-cheat-curl.gif" alt="" height="300" width="300">
-  <p>
-    Perform 7 partial reps from the bottom to the halfway point of the curl.
-    Then do 7 partial reps from the halfway point to the top.
-    Finish with 7 full-range reps. This method intensifies the burn and challenges different parts of the bicep.
-</p> 
+      <h2>6. Spider Curl:</h2>
+      <img src="./Biceps-workouts/Spider-Curl.webp" alt="" height="300" width="300">
+      <p>
+         Lie face down on an incline bench, allowing your arms to hang straight down.
+         Curl the barbell or dumbbells toward your forehead, keeping your upper arms perpendicular to the ground.
+      </p>
 
-<h2>9. Incline Dumbbell Curl:</h2> 
-<img src="./Biceps-workouts/incline-dumbbell-curl.gif" alt="" height="300" width="300">
-   <p>
-    Sit on an incline bench and allow your arms to hang straight down.
-    Curl the dumbbells, ensuring a full range of motion.
- </p> 
+      <h2>7. EZ Bar Curl:</h2>
+      <img src="./Biceps-workouts/EZ-Bar-Curl.gif" alt="" height="300" width="300">
+      <p>
+         Use an EZ curl bar, which has a curved shape.
+         This grip can be more wrist-friendly and allows for a different angle of stress on the biceps.
+      </p>
 
-<h2>10. Reverse Curl:</h2> 
-<img src="./Biceps-workouts/Reverse-Curl.gif" alt="" height="300" width="300">
-   <p>
-    Hold a barbell with an overhand grip (palms facing down).
-    Curl the barbell towards your shoulders, targeting the brachialis and brachioradialis muscles.
-</p>
+      <h2>8. 21s:</h2>
+      <img src="./Biceps-workouts/barbell-cheat-curl.gif" alt="" height="300" width="300">
+      <p>
+         Perform 7 partial reps from the bottom to the halfway point of the curl.
+         Then do 7 partial reps from the halfway point to the top.
+         Finish with 7 full-range reps. This method intensifies the burn and challenges different parts of the bicep.
+      </p>
 
-    <p>Remember to maintain proper form, control the weights, and gradually increase resistance to stimulate muscle growth. It's essential to include a mix of these exercises in your routine for balanced bicep development. Also, consider incorporating adequate rest and recovery into your workout schedule to allow your muscles to repair and grow.</p>
+      <h2>9. Incline Dumbbell Curl:</h2>
+      <img src="./Biceps-workouts/incline-dumbbell-curl.gif" alt="" height="300" width="300">
+      <p>
+         Sit on an incline bench and allow your arms to hang straight down.
+         Curl the dumbbells, ensuring a full range of motion.
+      </p>
 
-        </div>
+      <h2>10. Reverse Curl:</h2>
+      <img src="./Biceps-workouts/Reverse-Curl.gif" alt="" height="300" width="300">
+      <p>
+         Hold a barbell with an overhand grip (palms facing down).
+         Curl the barbell towards your shoulders, targeting the brachialis and brachioradialis muscles.
+      </p>
+
+      <p>Remember to maintain proper form, control the weights, and gradually increase resistance to stimulate muscle
+         growth. It's essential to include a mix of these exercises in your routine for balanced bicep development.
+         Also, consider incorporating adequate rest and recovery into your workout schedule to allow your muscles to
+         repair and grow.</p>
+
+   </div>
 
 
-       <div class="main-footer" >
-        <div class="footer-1" >
-          <img class="mylogo" src="./logo/Fitness & Health Center-min.jpg" alt="" height="300" width="300">
-        </div>
-        <div class="footer-2">
-        <div class="social-icon">
+   <div class="main-footer">
+      <div class="footer-1">
+         <img class="mylogo" src="./logo/Fitness & Health Center-min.jpg" alt="" height="300" width="300">
+      </div>
+      <div class="footer-2">
+         <div class="social-icon">
             <a href=""><i class="fa-brands fa-facebook"></i></a>
             <a href=""><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-twitter"></i></a>
             <a href=""><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div class="footer-nav">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="About-us.html">About Us</a></li>
-            <li><a href="Contact-us.html">Contact Us</a></li>
-            <li><a href="Terms-and-Conditions.html">Terms and Conditions</a></li>
-            <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
-            <li><a href="Disclaimer.html">Disclaimer</a></li>
-          </ul>
-        </div>
-        </div>
+         </div>
+         <div class="footer-nav">
+            <ul>
+               <li><a href="">Home</a></li>
+               <li><a href="About-us.html">About Us</a></li>
+               <li><a href="Contact-us.html">Contact Us</a></li>
+               <li><a href="Terms-and-Conditions.html">Terms and Conditions</a></li>
+               <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
+               <li><a href="Disclaimer.html">Disclaimer</a></li>
+            </ul>
+         </div>
       </div>
+   </div>
 </body>
+
 </html>

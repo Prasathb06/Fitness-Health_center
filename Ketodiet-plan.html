@@ -1,633 +1,643 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Fitness & Health Center</title>
-    <link rel="icon" type="image/x-icon" href="./logo/Fitness & Health Center 1.jpg">
-    <style>
-             body
-        {
-            background-color: gray;
-        }
-        .container
-        {
-      position:sticky;
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Fitness & Health Center</title>
+   <link rel="icon" type="image/x-icon" href="./logo/Fitness & Health Center 1.jpg">
+   <style>
+      body {
+         background-color: gray;
+      }
+
+      .container {
+         position: sticky;
          border: 1px solid blue;
          border: none;
          background-color: black;
-        height: 100px;
-        display: grid;
-        display: flex;
-        column-gap: 80px;
-        justify-items: start;
-        align-items: center;
-        border-bottom-right-radius: 150px;
-        }
-        .container .brand
-        {
+         height: 100px;
+         display: grid;
+         display: flex;
+         column-gap: 80px;
+         justify-items: start;
+         align-items: center;
+         border-bottom-right-radius: 150px;
+      }
+
+      .container .brand {
          border: 1px solid blue;
          border: none;
          width: 300px;
          height: 100px;
          color: white;
          text-align: center;
-        }
-       .container .main-menu
-      {
+      }
+
+      .container .main-menu {
          border: 1px solid blue;
          border: none;
-        height: 100px;
-        width: 900px;
-        display: grid;
-        display: flex;
-        justify-items: start;
-        align-items: center;
-        column-gap: 40px;
-      } 
-      .main-menu .menu
-{
-    border: 1px solid blue; 
-    border: none;
- color: white;
- display: flex;
- list-style: none;
- column-gap: 50px;
-}
-.menu .item1 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item1 :hover
-{
-   color: red;
+         height: 100px;
+         width: 900px;
+         display: grid;
+         display: flex;
+         justify-items: start;
+         align-items: center;
+         column-gap: 40px;
+      }
 
-}
-.menu .item2 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item2 :hover
-{
-   color: red;
-}
-.menu .item3 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item3 :hover
-{
-   color: red;
-}
-.menu .item4 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item4 :hover
-{
-   color: red;
-}
-.menu .item5 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item5 :hover
-{
-   color: red;
-}
-.menu .item6 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none; 
-}
-.menu .item6 :hover
-{
-   color: red;
-}
-.menu .item7 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none; 
-}
-.menu .item7 :hover
-{
-   color: red;
-}
-.menu .item8 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item8 :hover
-{
-   
-   color: red;
-}
-.main-menu .bar
-{
-   
-   border: 1px solid blue;
-   border: none;
-   cursor: pointer;
-   display: none;
-   background-color: white;  
-}
-.sidebar
-        {
-        background-color: black;
-        display: none;
-        width: 300px;
-        height: 600px;
-        border-bottom-right-radius: 150px;
-       
-        }
-        .sidebar .b
-        {
+      .main-menu .menu {
+         border: 1px solid blue;
+         border: none;
+         color: white;
+         display: flex;
+         list-style: none;
+         column-gap: 50px;
+      }
+
+      .menu .item1 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item1 :hover {
+         color: red;
+
+      }
+
+      .menu .item2 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item2 :hover {
+         color: red;
+      }
+
+      .menu .item3 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item3 :hover {
+         color: red;
+      }
+
+      .menu .item4 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item4 :hover {
+         color: red;
+      }
+
+      .menu .item5 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item5 :hover {
+         color: red;
+      }
+
+      .menu .item6 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item6 :hover {
+         color: red;
+      }
+
+      .menu .item7 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item7 :hover {
+         color: red;
+      }
+
+      .menu .item8 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item8 :hover {
+
+         color: red;
+      }
+
+      .main-menu .bar {
+
+         border: 1px solid blue;
+         border: none;
+         cursor: pointer;
+         display: none;
+         background-color: white;
+      }
+
+      .sidebar {
+         background-color: black;
+         display: none;
+         width: 300px;
+         height: 600px;
+         border-bottom-right-radius: 150px;
+
+      }
+
+      .sidebar .b {
          width: 300px;
          height: 100px;
          color: white;
          text-align: center;
-        }
-       
-      .mm .m
-{
-    border: 1px solid blue; 
-    border: none;
- color: white;
- display: flex;
- flex-direction: column;
- list-style: none;
- row-gap: 40px; 
-}
-.m .item9 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item9 :hover
-{
-   color: red;
+      }
 
-}
-.m .item10 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item10 :hover
-{
-   color: red;
-}
-.m .item11 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item11 :hover
-{
-   color: red;
-}
-.m .item12 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item12 :hover
-{
-   color: red;
-}
-.m .item13 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item13 :hover
-{
-   color: red;
-}
-.m .item14 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none; 
-}
-.m .item14 :hover
-{
-   color: red;
-}
-.m .item15 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none; 
-}
-.m .item15 :hover
-{
-   color: red;
-}
-.m .item16 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item16 :hover
-{
-   
-   color: red;
-}
-.main-footer
-{
-   /* width: 99%; */
-   /* height: 300px; */
-    border: 1px solid gray;
-    display: flex;
-    border-top-left-radius: 150px;
-    column-gap: 200px;
-    background-color: black;  
-     
-}
-.main-footer .footer-1
-    {
-      border: 1px solid white;
-      border: none;
-      color: white;
-      /* height: 300px;
+      .mm .m {
+         border: 1px solid blue;
+         border: none;
+         color: white;
+         display: flex;
+         flex-direction: column;
+         list-style: none;
+         row-gap: 40px;
+      }
+
+      .m .item9 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item9 :hover {
+         color: red;
+
+      }
+
+      .m .item10 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item10 :hover {
+         color: red;
+      }
+
+      .m .item11 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item11 :hover {
+         color: red;
+      }
+
+      .m .item12 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item12 :hover {
+         color: red;
+      }
+
+      .m .item13 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item13 :hover {
+         color: red;
+      }
+
+      .m .item14 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item14 :hover {
+         color: red;
+      }
+
+      .m .item15 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item15 :hover {
+         color: red;
+      }
+
+      .m .item16 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item16 :hover {
+
+         color: red;
+      }
+
+      .main-footer {
+         /* width: 99%; */
+         /* height: 300px; */
+         border: 1px solid gray;
+         display: flex;
+         border-top-left-radius: 150px;
+         column-gap: 200px;
+         background-color: black;
+
+      }
+
+      .main-footer .footer-1 {
+         border: 1px solid white;
+         border: none;
+         color: white;
+         /* height: 300px;
       width: 300px; */
-      animation-name: footer-1-animation;
-               animation-duration: 5s;
-      animation-iteration-count: infinite;
-    }
-    .footer-1 .mylogo{border-radius: 150px;}
-    @keyframes footer-1-animation
-{
-   from
-   {
-   transform: scale(0);
-   }
-   to
-   {
-     transform: scale(1);
-   }
-}
-.main-footer .footer-2
-{
-   border: 1px solid white;
-   border: none; 
-   display: grid;
-   justify-content: center;
-   align-content: center;
-   /* width: 99%; */
-    /* padding: 70px 0px 20px; */
-}
-.footer-2 .social-icon
-{
-   display: flex;
-   justify-content: center;
-}
-.social-icon a
-{
-text-decoration: none;
-padding: 10px;
-background-color: white;
-margin: 10px;
-border-radius: 50px;
-}
-.social-icon a i
-{
-   font-size: 2am;
-   color: black;
-   opacity: 0.9;
-}
-.social-icon a:hover
-{
-   background-color: #111;
-   transition: 0.5s;
-}
-.social-icon a:hover i
-{
-color: white;
-transition: 0.5s;
-}
-.footer-nav
-{
-   margin:30px 0 ;
-}
-.footer-nav ul
-{
-display: flex;
-justify-content: center;
-}
-.footer-nav ul li a
-{
-   color: white;
-   margin: 20px;
-   text-decoration: none;
-   font-size: 1.3am;
-   opacity: 0.7;
-   transition: 0.5s;
-}
-.footer-nav ul li a:hover
-{
-   opacity: 1;
-}
-.footer-bottom
-{
-   background-color: black;
-   padding: 20px;
-   text-align: center;
-}
-.footer-bottom p
-{
-color: white;
-}
-.designer
-{
-   opacity: 0.7;
-   letter-spacing: 1px;
-   font-weight: 400;
-   margin: 0px 5px;
-}
-.container-1
-{
-    border: 1px solid;
-   /* width: 99%; */
-    /* height: 100%; */
-    border: none;
-    text-align: justify;
-    padding: 20px 0px 20px 0px;
-    flex-wrap: wrap;
-    font-size: 20px;
-    backdrop-filter: blur(20px);
-    margin: 0% 11% 0% 10%;
-}
-.container-1 img
-{
-border-radius: 30px;
-}
-.container-1 p
-{
-    text-indent: 55px;
-}
-p::first-letter
-{
-    font-size: 25px;
-}
-@media screen and (min-width: 320px) and (max-width: 480px)
-{  
-   .container
-   {
-      
-    height: 50px;
-    border-bottom-right-radius: 0px;
-   }
-  .container .brand
-  {
-   font-size: 20%;
-   margin-top: 70px;
-   width: 300px;
-  }
-  /* .container .main-menu
+         animation-name: footer-1-animation;
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
+      }
+
+      .footer-1 .mylogo {
+         border-radius: 150px;
+      }
+
+      @keyframes footer-1-animation {
+         from {
+            transform: scale(0);
+         }
+
+         to {
+            transform: scale(1);
+         }
+      }
+
+      .main-footer .footer-2 {
+         border: 1px solid white;
+         border: none;
+         display: grid;
+         justify-content: center;
+         align-content: center;
+         /* width: 99%; */
+         /* padding: 70px 0px 20px; */
+      }
+
+      .footer-2 .social-icon {
+         display: flex;
+         justify-content: center;
+      }
+
+      .social-icon a {
+         text-decoration: none;
+         padding: 10px;
+         background-color: white;
+         margin: 10px;
+         border-radius: 50px;
+      }
+
+      .social-icon a i {
+         font-size: 2am;
+         color: black;
+         opacity: 0.9;
+      }
+
+      .social-icon a:hover {
+         background-color: #111;
+         transition: 0.5s;
+      }
+
+      .social-icon a:hover i {
+         color: white;
+         transition: 0.5s;
+      }
+
+      .footer-nav {
+         margin: 30px 0;
+      }
+
+      .footer-nav ul {
+         display: flex;
+         justify-content: center;
+      }
+
+      .footer-nav ul li a {
+         color: white;
+         margin: 20px;
+         text-decoration: none;
+         font-size: 1.3am;
+         opacity: 0.7;
+         transition: 0.5s;
+      }
+
+      .footer-nav ul li a:hover {
+         opacity: 1;
+      }
+
+      .footer-bottom {
+         background-color: black;
+         padding: 20px;
+         text-align: center;
+      }
+
+      .footer-bottom p {
+         color: white;
+      }
+
+      .designer {
+         opacity: 0.7;
+         letter-spacing: 1px;
+         font-weight: 400;
+         margin: 0px 5px;
+      }
+
+      .container-1 {
+         border: 1px solid;
+         /* width: 99%; */
+         /* height: 100%; */
+         border: none;
+         text-align: justify;
+         padding: 20px 0px 20px 0px;
+         flex-wrap: wrap;
+         font-size: 20px;
+         backdrop-filter: blur(20px);
+         margin: 0% 11% 0% 10%;
+      }
+
+      .container-1 img {
+         border-radius: 30px;
+      }
+
+      .container-1 p {
+         text-indent: 55px;
+      }
+
+      p::first-letter {
+         font-size: 25px;
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 480px) {
+         .container {
+
+            height: 50px;
+            border-bottom-right-radius: 0px;
+         }
+
+         .container .brand {
+            font-size: 20%;
+            margin-top: 70px;
+            width: 300px;
+         }
+
+         /* .container .main-menu
   {
     
   } */
-  .main-menu .menu
-  {
-   display: none;
-  }
-  .main-menu .bar
-  {
-   font-size: 50%;
-   margin-left: 110px;
-   margin-top: 10px;
-    display: block;
-    margin-bottom: 20px;
-  }
-  .sidebar
-  {
-   height: 200px;
-   width: 305px;
-   border-bottom-right-radius: 50px;
-  }
-  .sidebar .mm .xbar
-      {
-      margin-left: 100px;
-      color: white;
-      } 
-  .mm .m
-  {
-   row-gap: 3px;
-  }
-  .mm .m .item9 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item10 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item11 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item12 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item13 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item14 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item15 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item16 a
-  {
-   font-size: 10%;
-  }
-.container-1
-{
-   font-size: small;
-}
-.container-1 h1
-{
-   font-size: large;
-   font-weight:900;
-   
-}
-.container-1 img
-{
-   width: 200px;
-   height: 200px;
-}
-.container-1 p
-{
-    text-indent: 55px;
-}
-p::first-letter
-{
-    font-size: 25px;
-}
-.main-footer
-{
-   /* width: 925px;  */
-   height: 200px;
-    border: 1px solid gray;
-    display: flex;
-    border-top-left-radius: 50px;
-    column-gap: 00px;
-    margin-top: 50px;
-    background-color: black;  
-     
-}
-.main-footer .footer-1
-    {
-      border: 1px solid white;
-      border: none;
-      color: white;
-      /* height: 300px;
-      width: 300px; */
-      animation-name: footer-1-animation;
-               animation-duration: 5s;
-      animation-iteration-count: infinite;
-    }
-    .footer-1 .mylogo{ margin-top: 50px; margin-left: 40px; border-radius: 70px; height: 100px;width: 100px;}
-    @keyframes footer-1-animation
-{
-   from
-   {
-   transform: scale(0);
-   }
-   to
-   {
-     transform: scale(1);
-   }
-}
-.main-footer .footer-2
-{
-   border: 1px solid white;
-   border: none; 
-   display: grid;
-   justify-content: center;
-   align-content: center;
-   /* width: 70%; */
-    /* padding: 70px 0px 20px; */
-}
-.footer-2 .social-icon
-{
-   display: flex;
-   justify-content: center;
-   margin:10px 0px 0px 20px ;
-}
-.social-icon a
-{
-text-decoration: none;
-padding: 3px;
-background-color: white;
-/* margin: 5px; */
-border-radius: 5px;
-}
-.social-icon a i
-{
-   font-size: 10px;
-   color: black;
-   opacity: 0.9;
-}
-.social-icon a:hover
-{
-   background-color: #111;
-   transition: 0.5s;
-}
-.social-icon a:hover i
-{
-color: white;
-transition: 0.5s;
-}
-.footer-nav
-{
-   margin:10px 0px 0px 20px ;
-}
-.footer-nav ul
-{
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
-.footer-nav ul li a
-{
-   
-   margin: 5px;
-   font-size: 10px;
-}
-.footer-bottom
-{
-   background-color: black;
-   padding: 20px;
-   text-align: center;
-}
-.footer-bottom p
-{
-color: white;
-font-size: 10px;
-}
-.designer
-{
-   opacity: 0.7;
-   letter-spacing: 1px;
-   font-weight: 100;
-   margin: 0px 5px;
-}
-}
+         .main-menu .menu {
+            display: none;
+         }
 
-    </style>
+         .main-menu .bar {
+            font-size: 50%;
+            margin-left: 110px;
+            margin-top: 10px;
+            display: block;
+            margin-bottom: 20px;
+         }
+
+         .sidebar {
+            height: 200px;
+            width: 305px;
+            border-bottom-right-radius: 50px;
+         }
+
+         .sidebar .mm .xbar {
+            margin-left: 100px;
+            color: white;
+         }
+
+         .mm .m {
+            row-gap: 3px;
+         }
+
+         .mm .m .item9 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item10 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item11 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item12 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item13 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item14 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item15 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item16 a {
+            font-size: 10%;
+         }
+
+         .container-1 {
+            font-size: small;
+         }
+
+         .container-1 h1 {
+            font-size: large;
+            font-weight: 900;
+
+         }
+
+         .container-1 img {
+            width: 200px;
+            height: 200px;
+         }
+
+         .container-1 p {
+            text-indent: 55px;
+         }
+
+         p::first-letter {
+            font-size: 25px;
+         }
+
+         .main-footer {
+            /* width: 925px;  */
+            height: 200px;
+            border: 1px solid gray;
+            display: flex;
+            border-top-left-radius: 50px;
+            column-gap: 00px;
+            margin-top: 50px;
+            background-color: black;
+
+         }
+
+         .main-footer .footer-1 {
+            border: 1px solid white;
+            border: none;
+            color: white;
+            /* height: 300px;
+      width: 300px; */
+            animation-name: footer-1-animation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+         }
+
+         .footer-1 .mylogo {
+            margin-top: 50px;
+            margin-left: 40px;
+            border-radius: 70px;
+            height: 100px;
+            width: 100px;
+         }
+
+         @keyframes footer-1-animation {
+            from {
+               transform: scale(0);
+            }
+
+            to {
+               transform: scale(1);
+            }
+         }
+
+         .main-footer .footer-2 {
+            border: 1px solid white;
+            border: none;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            /* width: 70%; */
+            /* padding: 70px 0px 20px; */
+         }
+
+         .footer-2 .social-icon {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0px 0px 20px;
+         }
+
+         .social-icon a {
+            text-decoration: none;
+            padding: 3px;
+            background-color: white;
+            /* margin: 5px; */
+            border-radius: 5px;
+         }
+
+         .social-icon a i {
+            font-size: 10px;
+            color: black;
+            opacity: 0.9;
+         }
+
+         .social-icon a:hover {
+            background-color: #111;
+            transition: 0.5s;
+         }
+
+         .social-icon a:hover i {
+            color: white;
+            transition: 0.5s;
+         }
+
+         .footer-nav {
+            margin: 10px 0px 0px 20px;
+         }
+
+         .footer-nav ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+         }
+
+         .footer-nav ul li a {
+
+            margin: 5px;
+            font-size: 10px;
+         }
+
+         .footer-bottom {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+         }
+
+         .footer-bottom p {
+            color: white;
+            font-size: 10px;
+         }
+
+         .designer {
+            opacity: 0.7;
+            letter-spacing: 1px;
+            font-weight: 100;
+            margin: 0px 5px;
+         }
+      }
+   </style>
 </head>
+
 <body>
-    <div class="container">
-      <div class="brand"><h1>Fitness & health <br> Center</h1></div>
-      <div class="main-menu">
-        <ul class="menu">
-         <li class="item1"><a href="My-project.html">Home</a></li>
-         <li class="item2"><a href="workouts.html">Workout</a></li>
-         <!-- <li class="item3"><a href="">Home-Workout</a></li> -->
-         <li class="item4"><a href="Cardio.html">Cardio</a></li>
-         <li class="item5"><a href="Mobility.html">Mobility</a></li>
-         <li class="item6"><a href="Yoga.html">Yoga</a></li>
-         <li class="item7"><a href="Diet-plan.html">Diet-Plan</a></li>
-         <li class="item8"><a href="Diet-Recipes.html">Diet-Food</a></li>
-        </ul>
-        <div class="bar" onclick=showsidebar()><i class="fa-solid fa-bars"></i></div>
+   <div class="container">
+      <div class="brand">
+         <h1>Fitness & health <br> Center</h1>
       </div>
-       </div>
-       <div class="sidebar">
-         <div class="mm">
-            <div class="xbar"><i onclick=hidesidebar() class="fa-solid fa-xmark"></i></div>
-           <ul class="m">
-            <li class="item9"><a href="My-project.html">Home</a></li>
+      <div class="main-menu">
+         <ul class="menu">
+            <li class="item1"><a href="index.html">Home</a></li>
+            <li class="item2"><a href="workouts.html">Workout</a></li>
+            <!-- <li class="item3"><a href="">Home-Workout</a></li> -->
+            <li class="item4"><a href="Cardio.html">Cardio</a></li>
+            <li class="item5"><a href="Mobility.html">Mobility</a></li>
+            <li class="item6"><a href="Yoga.html">Yoga</a></li>
+            <li class="item7"><a href="Diet-plan.html">Diet-Plan</a></li>
+            <li class="item8"><a href="Diet-Recipes.html">Diet-Food</a></li>
+         </ul>
+         <div class="bar" onclick=showsidebar()><i class="fa-solid fa-bars"></i></div>
+      </div>
+   </div>
+   <div class="sidebar">
+      <div class="mm">
+         <div class="xbar"><i onclick=hidesidebar() class="fa-solid fa-xmark"></i></div>
+         <ul class="m">
+            <li class="item9"><a href="index.html">Home</a></li>
             <li class="item10"><a href="workouts.html">Workout</a></li>
             <!-- <li class="item3"><a href="">Home-Workout</a></li> -->
             <li class="item11"><a href="Cardio.html">Cardio</a></li>
@@ -635,97 +645,131 @@ font-size: 10px;
             <li class="item13"><a href="Yoga.html">Yoga</a></li>
             <li class="item14"><a href="Diet-plan.html">Diet-Plan</a></li>
             <li class="item15"><a href="Diet-Recipes.html">Diet-Food</a></li>
-           </ul>
-         </div>
-          </div>
-          <script>
-            function showsidebar()
-             {
-               const sidebar = document.querySelector('.sidebar')
-               sidebar.style.display ='flex'
-            }
-            function hidesidebar()
-             {
-               const sidebar = document.querySelector('.sidebar')
-               sidebar.style.display ='none'
-            }
-   
-          </script>
-        <div class="container-1">
-            <h1>Keto Diet</h1>
-            <p>
-                The Ketogenic Diet, often referred to as the Keto Diet, is a high-fat, low-carbohydrate diet that has gained popularity for its potential to promote weight loss and certain health benefits. The main principle of the diet is to drastically reduce carbohydrate intake while increasing the consumption of fats, which induces a metabolic state known as ketosis.
-                Ketosis occurs when the body doesn't have enough carbohydrates to use as its primary source of energy. In the absence of carbohydrates, the body starts breaking down fats into molecules called ketones in the liver. These ketones can then be used as an alternative fuel source for the brain and body.                
-            </p>
+         </ul>
+      </div>
+   </div>
+   <script>
+      function showsidebar() {
+         const sidebar = document.querySelector('.sidebar')
+         sidebar.style.display = 'flex'
+      }
+      function hidesidebar() {
+         const sidebar = document.querySelector('.sidebar')
+         sidebar.style.display = 'none'
+      }
 
-            <h2>The typical macronutrient breakdown of a ketogenic diet is roughly as follows:</h2>
-            <img src="./Keto diet/download.jpg" alt="" height="300" width="300">
-<p>
-   <b>High fat:</b>  Around 70-80% of daily calories come from healthy fats such as avocados, nuts, seeds, olive oil, and fatty fish. <br>
-   <b>Low carbohydrate:</b> Carbohydrate intake is severely restricted to about 5-10% of daily calories. This means avoiding or limiting foods like bread, pasta, rice, and sugary foods. <br>
-   <b>Moderate protein:</b> Protein intake is moderate, making up around 15-20% of daily calories. Sources of protein include meat, poultry, fish, eggs, and dairy products. <br>
- </p> 
+   </script>
+   <div class="container-1">
+      <h1>Keto Diet</h1>
+      <p>
+         The Ketogenic Diet, often referred to as the Keto Diet, is a high-fat, low-carbohydrate diet that has gained
+         popularity for its potential to promote weight loss and certain health benefits. The main principle of the diet
+         is to drastically reduce carbohydrate intake while increasing the consumption of fats, which induces a
+         metabolic state known as ketosis.
+         Ketosis occurs when the body doesn't have enough carbohydrates to use as its primary source of energy. In the
+         absence of carbohydrates, the body starts breaking down fats into molecules called ketones in the liver. These
+         ketones can then be used as an alternative fuel source for the brain and body.
+      </p>
 
-   <h2>Benefits often attributed to the ketogenic diet include:</h2>
-   <h2>1. Weight Loss:</h2>
-<p>With the reduction in carbohydrate intake, insulin levels decrease, and the body is prompted to burn stored fats for energy, potentially leading to weight loss.</p> 
-    <h2>2. Improved Blood Sugar Control:</h2>
-    <p>The diet can help stabilize blood sugar levels, making it beneficial for individuals with type 2 diabetes or those at risk of developing it.</p> 
-    <h2>3. Increased Satiety:</h2>
-<p>High-fat foods can lead to greater feelings of fullness and satisfaction, potentially reducing overall calorie intake.</p> 
-<h2>4. Improved Mental Clarity and Focus:</h2> 
-   <p>Some people report improved cognitive function and mental clarity while in ketosis.</p> 
-<h2>5. Epilepsy Treatment:</h2> 
-   <p>The ketogenic diet was initially developed as a treatment for epilepsy, particularly in children who don't respond well to medication.</p> 
-<h2>6. Potential Heart Health Benefits:</h2> 
-  <p>Some research suggests that the diet might improve cardiovascular risk factors like blood pressure, cholesterol levels, and triglycerides. However, long-term effects are still under investigation.</p> 
-<h2>7. Reduced Seizures in Epilepsy:</h2> 
-  <p>The ketogenic diet has been used as a therapeutic approach to reduce the frequency and severity of seizures in some individuals with epilepsy, particularly drug-resistant forms.</p> 
-<br>
-<h2>Here are some of the common types of ketogenic diets:</h2> 
-<br>
- <h2>1. Standard Ketogenic Diet (SKD):</h2>
-   <p> This is the most well-known version of the ketogenic diet. It typically consists of approximately 70-75% fat, 20-25% protein, and 5-10% carbohydrates. The goal of this diet is to enter a state of ketosis, where the body primarily burns fat for fuel instead of carbohydrates.</p> 
-<h2>2. Targeted Ketogenic Diet (TKD):</h2> 
-   <p>The TKD allows for a small amount of carbohydrates to be consumed around workouts. This is often used by individuals who engage in intense physical activity and need some extra carbohydrates to fuel their performance without significantly impacting ketosis.</p>
-<h2>3. Cyclical Ketogenic Diet (CKD):</h2> 
-   <p>The CKD involves alternating periods of higher carbohydrate intake (usually 1-2 days) with periods of strict keto eating. For example, a common approach is to follow a standard ketogenic diet for 5-6 days and then have 1-2 days of higher carb consumption. This approach is also utilized by athletes and bodybuilders to replenish glycogen stores and enhance performance.</p>
-<h2>4. High-Protein Ketogenic Diet:</h2> 
-   <p>This variation is similar to the standard ketogenic diet but emphasizes a higher intake of protein, usually around 60-65% fat, 30-35% protein, and 5-10% carbohydrates. It may be preferred by those who want to maintain or build muscle mass while still reaping the benefits of ketosis.</p>
-<h2>5. Vegetarian or Vegan Ketogenic Diet:</h2> 
-   <p>While challenging, it is possible to follow a vegetarian or vegan ketogenic diet by incorporating plant-based fats and proteins while minimizing carbohydrate intake. Avocado, coconut oil, nuts, seeds, and non-starchy vegetables are often staples in these diets.</p>
-<h2> 6. Lazy or Dirty Keto:</h2> 
-   <p>This approach focuses solely on macronutrient ratios and doesn't emphasize the quality of the food sources. As long as the proper fat, protein, and carbohydrate ratios are maintained, foods like processed meats, fast food, and low-quality oils are allowed. However, this approach may not support overall health and well-being as well as a cleaner ketogenic diet.</p>
-<h2>7. Medical Ketogenic Diet:</h2> 
-   <p>This is a therapeutic diet that has been used to treat certain medical conditions, such as epilepsy, especially in children who don't respond well to medication. It often involves a strict and carefully calculated macronutrient ratio, usually administered under medical supervision.</p>
+      <h2>The typical macronutrient breakdown of a ketogenic diet is roughly as follows:</h2>
+      <img src="./Keto diet/download.jpg" alt="" height="300" width="300">
+      <p>
+         <b>High fat:</b> Around 70-80% of daily calories come from healthy fats such as avocados, nuts, seeds, olive
+         oil, and fatty fish. <br>
+         <b>Low carbohydrate:</b> Carbohydrate intake is severely restricted to about 5-10% of daily calories. This
+         means avoiding or limiting foods like bread, pasta, rice, and sugary foods. <br>
+         <b>Moderate protein:</b> Protein intake is moderate, making up around 15-20% of daily calories. Sources of
+         protein include meat, poultry, fish, eggs, and dairy products. <br>
+      </p>
 
-    <p>It's important to note that the ketogenic diet is not suitable for everyone. It can be challenging to adhere to due to its strict carbohydrate restrictions, and some people may experience initial side effects like the "keto flu," which includes symptoms such as fatigue, headache, nausea, and irritability as the body adapts to using ketones for energy.
-        Before starting any diet, especially one as restrictive as the ketogenic diet, it's recommended to consult with a healthcare professional or a registered dietitian to ensure it's appropriate for your individual health needs and goals.</p>
-        </div>
+      <h2>Benefits often attributed to the ketogenic diet include:</h2>
+      <h2>1. Weight Loss:</h2>
+      <p>With the reduction in carbohydrate intake, insulin levels decrease, and the body is prompted to burn stored
+         fats for energy, potentially leading to weight loss.</p>
+      <h2>2. Improved Blood Sugar Control:</h2>
+      <p>The diet can help stabilize blood sugar levels, making it beneficial for individuals with type 2 diabetes or
+         those at risk of developing it.</p>
+      <h2>3. Increased Satiety:</h2>
+      <p>High-fat foods can lead to greater feelings of fullness and satisfaction, potentially reducing overall calorie
+         intake.</p>
+      <h2>4. Improved Mental Clarity and Focus:</h2>
+      <p>Some people report improved cognitive function and mental clarity while in ketosis.</p>
+      <h2>5. Epilepsy Treatment:</h2>
+      <p>The ketogenic diet was initially developed as a treatment for epilepsy, particularly in children who don't
+         respond well to medication.</p>
+      <h2>6. Potential Heart Health Benefits:</h2>
+      <p>Some research suggests that the diet might improve cardiovascular risk factors like blood pressure, cholesterol
+         levels, and triglycerides. However, long-term effects are still under investigation.</p>
+      <h2>7. Reduced Seizures in Epilepsy:</h2>
+      <p>The ketogenic diet has been used as a therapeutic approach to reduce the frequency and severity of seizures in
+         some individuals with epilepsy, particularly drug-resistant forms.</p>
+      <br>
+      <h2>Here are some of the common types of ketogenic diets:</h2>
+      <br>
+      <h2>1. Standard Ketogenic Diet (SKD):</h2>
+      <p> This is the most well-known version of the ketogenic diet. It typically consists of approximately 70-75% fat,
+         20-25% protein, and 5-10% carbohydrates. The goal of this diet is to enter a state of ketosis, where the body
+         primarily burns fat for fuel instead of carbohydrates.</p>
+      <h2>2. Targeted Ketogenic Diet (TKD):</h2>
+      <p>The TKD allows for a small amount of carbohydrates to be consumed around workouts. This is often used by
+         individuals who engage in intense physical activity and need some extra carbohydrates to fuel their performance
+         without significantly impacting ketosis.</p>
+      <h2>3. Cyclical Ketogenic Diet (CKD):</h2>
+      <p>The CKD involves alternating periods of higher carbohydrate intake (usually 1-2 days) with periods of strict
+         keto eating. For example, a common approach is to follow a standard ketogenic diet for 5-6 days and then have
+         1-2 days of higher carb consumption. This approach is also utilized by athletes and bodybuilders to replenish
+         glycogen stores and enhance performance.</p>
+      <h2>4. High-Protein Ketogenic Diet:</h2>
+      <p>This variation is similar to the standard ketogenic diet but emphasizes a higher intake of protein, usually
+         around 60-65% fat, 30-35% protein, and 5-10% carbohydrates. It may be preferred by those who want to maintain
+         or build muscle mass while still reaping the benefits of ketosis.</p>
+      <h2>5. Vegetarian or Vegan Ketogenic Diet:</h2>
+      <p>While challenging, it is possible to follow a vegetarian or vegan ketogenic diet by incorporating plant-based
+         fats and proteins while minimizing carbohydrate intake. Avocado, coconut oil, nuts, seeds, and non-starchy
+         vegetables are often staples in these diets.</p>
+      <h2> 6. Lazy or Dirty Keto:</h2>
+      <p>This approach focuses solely on macronutrient ratios and doesn't emphasize the quality of the food sources. As
+         long as the proper fat, protein, and carbohydrate ratios are maintained, foods like processed meats, fast food,
+         and low-quality oils are allowed. However, this approach may not support overall health and well-being as well
+         as a cleaner ketogenic diet.</p>
+      <h2>7. Medical Ketogenic Diet:</h2>
+      <p>This is a therapeutic diet that has been used to treat certain medical conditions, such as epilepsy, especially
+         in children who don't respond well to medication. It often involves a strict and carefully calculated
+         macronutrient ratio, usually administered under medical supervision.</p>
+
+      <p>It's important to note that the ketogenic diet is not suitable for everyone. It can be challenging to adhere to
+         due to its strict carbohydrate restrictions, and some people may experience initial side effects like the "keto
+         flu," which includes symptoms such as fatigue, headache, nausea, and irritability as the body adapts to using
+         ketones for energy.
+         Before starting any diet, especially one as restrictive as the ketogenic diet, it's recommended to consult with
+         a healthcare professional or a registered dietitian to ensure it's appropriate for your individual health needs
+         and goals.</p>
+   </div>
 
 
-       <div class="main-footer" >
-        <div class="footer-1" >
-          <img class="mylogo" src="./logo/Fitness & Health Center-min.jpg" alt="" height="300" width="300">
-        </div>
-        <div class="footer-2">
-        <div class="social-icon">
+   <div class="main-footer">
+      <div class="footer-1">
+         <img class="mylogo" src="./logo/Fitness & Health Center-min.jpg" alt="" height="300" width="300">
+      </div>
+      <div class="footer-2">
+         <div class="social-icon">
             <a href=""><i class="fa-brands fa-facebook"></i></a>
             <a href=""><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-twitter"></i></a>
             <a href=""><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div class="footer-nav">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="About-us.html">About Us</a></li>
-            <li><a href="Contact-us.html">Contact Us</a></li>
-            <li><a href="Terms-and-Conditions.html">Terms and Conditions</a></li>
-            <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
-            <li><a href="Disclaimer.html">Disclaimer</a></li>
-          </ul>
-        </div>
-        </div>
+         </div>
+         <div class="footer-nav">
+            <ul>
+               <li><a href="">Home</a></li>
+               <li><a href="About-us.html">About Us</a></li>
+               <li><a href="Contact-us.html">Contact Us</a></li>
+               <li><a href="Terms-and-Conditions.html">Terms and Conditions</a></li>
+               <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
+               <li><a href="Disclaimer.html">Disclaimer</a></li>
+            </ul>
+         </div>
       </div>
+   </div>
 </body>
+
 </html>

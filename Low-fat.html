@@ -1,633 +1,643 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Fitness & Health Center</title>
-    <link rel="icon" type="image/x-icon" href="./logo/Fitness & Health Center 1.jpg">
-    <style>
-              body
-        {
-            background-color: gray;
-        }
-        .container
-        {
-      position:sticky;
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Fitness & Health Center</title>
+   <link rel="icon" type="image/x-icon" href="./logo/Fitness & Health Center 1.jpg">
+   <style>
+      body {
+         background-color: gray;
+      }
+
+      .container {
+         position: sticky;
          border: 1px solid blue;
          border: none;
          background-color: black;
-        height: 100px;
-        display: grid;
-        display: flex;
-        column-gap: 80px;
-        justify-items: start;
-        align-items: center;
-        border-bottom-right-radius: 150px;
-        }
-        .container .brand
-        {
+         height: 100px;
+         display: grid;
+         display: flex;
+         column-gap: 80px;
+         justify-items: start;
+         align-items: center;
+         border-bottom-right-radius: 150px;
+      }
+
+      .container .brand {
          border: 1px solid blue;
          border: none;
          width: 300px;
          height: 100px;
          color: white;
          text-align: center;
-        }
-       .container .main-menu
-      {
+      }
+
+      .container .main-menu {
          border: 1px solid blue;
          border: none;
-        height: 100px;
-        width: 900px;
-        display: grid;
-        display: flex;
-        justify-items: start;
-        align-items: center;
-        column-gap: 40px;
-      } 
-      .main-menu .menu
-{
-    border: 1px solid blue; 
-    border: none;
- color: white;
- display: flex;
- list-style: none;
- column-gap: 50px;
-}
-.menu .item1 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item1 :hover
-{
-   color: red;
+         height: 100px;
+         width: 900px;
+         display: grid;
+         display: flex;
+         justify-items: start;
+         align-items: center;
+         column-gap: 40px;
+      }
 
-}
-.menu .item2 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item2 :hover
-{
-   color: red;
-}
-.menu .item3 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item3 :hover
-{
-   color: red;
-}
-.menu .item4 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item4 :hover
-{
-   color: red;
-}
-.menu .item5 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item5 :hover
-{
-   color: red;
-}
-.menu .item6 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none; 
-}
-.menu .item6 :hover
-{
-   color: red;
-}
-.menu .item7 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none; 
-}
-.menu .item7 :hover
-{
-   color: red;
-}
-.menu .item8 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.menu .item8 :hover
-{
-   
-   color: red;
-}
-.main-menu .bar
-{
-   
-   border: 1px solid blue;
-   border: none;
-   cursor: pointer;
-   display: none;
-   background-color: white;  
-}
-.sidebar
-        {
-        background-color: black;
-        display: none;
-        width: 300px;
-        height: 600px;
-        border-bottom-right-radius: 150px;
-       
-        }
-        .sidebar .b
-        {
+      .main-menu .menu {
+         border: 1px solid blue;
+         border: none;
+         color: white;
+         display: flex;
+         list-style: none;
+         column-gap: 50px;
+      }
+
+      .menu .item1 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item1 :hover {
+         color: red;
+
+      }
+
+      .menu .item2 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item2 :hover {
+         color: red;
+      }
+
+      .menu .item3 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item3 :hover {
+         color: red;
+      }
+
+      .menu .item4 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item4 :hover {
+         color: red;
+      }
+
+      .menu .item5 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item5 :hover {
+         color: red;
+      }
+
+      .menu .item6 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item6 :hover {
+         color: red;
+      }
+
+      .menu .item7 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item7 :hover {
+         color: red;
+      }
+
+      .menu .item8 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .menu .item8 :hover {
+
+         color: red;
+      }
+
+      .main-menu .bar {
+
+         border: 1px solid blue;
+         border: none;
+         cursor: pointer;
+         display: none;
+         background-color: white;
+      }
+
+      .sidebar {
+         background-color: black;
+         display: none;
+         width: 300px;
+         height: 600px;
+         border-bottom-right-radius: 150px;
+
+      }
+
+      .sidebar .b {
          width: 300px;
          height: 100px;
          color: white;
          text-align: center;
-        }
-       
-      .mm .m
-{
-    border: 1px solid blue; 
-    border: none;
- color: white;
- display: flex;
- flex-direction: column;
- list-style: none;
- row-gap: 40px; 
-}
-.m .item9 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item9 :hover
-{
-   color: red;
+      }
 
-}
-.m .item10 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item10 :hover
-{
-   color: red;
-}
-.m .item11 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item11 :hover
-{
-   color: red;
-}
-.m .item12 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item12 :hover
-{
-   color: red;
-}
-.m .item13 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item13 :hover
-{
-   color: red;
-}
-.m .item14 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none; 
-}
-.m .item14 :hover
-{
-   color: red;
-}
-.m .item15 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none; 
-}
-.m .item15 :hover
-{
-   color: red;
-}
-.m .item16 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.m .item16 :hover
-{
-   
-   color: red;
-}
-.main-footer
-{
-   /* width: 99%; */
-   /* height: 300px; */
-    border: 1px solid gray;
-    display: flex;
-    border-top-left-radius: 150px;
-    column-gap: 200px;
-    background-color: black;  
-     
-}
-.main-footer .footer-1
-    {
-      border: 1px solid white;
-      border: none;
-      color: white;
-      /* height: 300px;
+      .mm .m {
+         border: 1px solid blue;
+         border: none;
+         color: white;
+         display: flex;
+         flex-direction: column;
+         list-style: none;
+         row-gap: 40px;
+      }
+
+      .m .item9 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item9 :hover {
+         color: red;
+
+      }
+
+      .m .item10 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item10 :hover {
+         color: red;
+      }
+
+      .m .item11 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item11 :hover {
+         color: red;
+      }
+
+      .m .item12 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item12 :hover {
+         color: red;
+      }
+
+      .m .item13 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item13 :hover {
+         color: red;
+      }
+
+      .m .item14 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item14 :hover {
+         color: red;
+      }
+
+      .m .item15 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item15 :hover {
+         color: red;
+      }
+
+      .m .item16 a {
+         font-size: 20px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .m .item16 :hover {
+
+         color: red;
+      }
+
+      .main-footer {
+         /* width: 99%; */
+         /* height: 300px; */
+         border: 1px solid gray;
+         display: flex;
+         border-top-left-radius: 150px;
+         column-gap: 200px;
+         background-color: black;
+
+      }
+
+      .main-footer .footer-1 {
+         border: 1px solid white;
+         border: none;
+         color: white;
+         /* height: 300px;
       width: 300px; */
-      animation-name: footer-1-animation;
-               animation-duration: 5s;
-      animation-iteration-count: infinite;
-    }
-    .footer-1 .mylogo{border-radius: 150px;}
-    @keyframes footer-1-animation
-{
-   from
-   {
-   transform: scale(0);
-   }
-   to
-   {
-     transform: scale(1);
-   }
-}
-.main-footer .footer-2
-{
-   border: 1px solid white;
-   border: none; 
-   display: grid;
-   justify-content: center;
-   align-content: center;
-   /* width: 99%; */
-    /* padding: 70px 0px 20px; */
-}
-.footer-2 .social-icon
-{
-   display: flex;
-   justify-content: center;
-}
-.social-icon a
-{
-text-decoration: none;
-padding: 10px;
-background-color: white;
-margin: 10px;
-border-radius: 50px;
-}
-.social-icon a i
-{
-   font-size: 2am;
-   color: black;
-   opacity: 0.9;
-}
-.social-icon a:hover
-{
-   background-color: #111;
-   transition: 0.5s;
-}
-.social-icon a:hover i
-{
-color: white;
-transition: 0.5s;
-}
-.footer-nav
-{
-   margin:30px 0 ;
-}
-.footer-nav ul
-{
-display: flex;
-justify-content: center;
-}
-.footer-nav ul li a
-{
-   color: white;
-   margin: 20px;
-   text-decoration: none;
-   font-size: 1.3am;
-   opacity: 0.7;
-   transition: 0.5s;
-}
-.footer-nav ul li a:hover
-{
-   opacity: 1;
-}
-.footer-bottom
-{
-   background-color: black;
-   padding: 20px;
-   text-align: center;
-}
-.footer-bottom p
-{
-color: white;
-}
-.designer
-{
-   opacity: 0.7;
-   letter-spacing: 1px;
-   font-weight: 400;
-   margin: 0px 5px;
-}
-.container-1
-{
-    border: 1px solid;
-   /* width: 99%; */
-    /* height: 100%; */
-    border: none;
-    text-align: justify;
-    padding: 20px 0px 20px 0px;
-    flex-wrap: wrap;
-    font-size: 20px;
-    backdrop-filter: blur(20px);
-    margin: 0% 11% 0% 10%;
-}
-.container-1 img
-{
-border-radius: 30px;
-}
-.container-1 p
-{
-    text-indent: 55px;
-}
-p::first-letter
-{
-    font-size: 25px;
-}
-@media screen and (min-width: 320px) and (max-width: 480px)
-{  
-   .container
-   {
-      
-    height: 50px;
-    border-bottom-right-radius: 0px;
-   }
-  .container .brand
-  {
-   font-size: 20%;
-   margin-top: 70px;
-   width: 300px;
-  }
-  /* .container .main-menu
+         animation-name: footer-1-animation;
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
+      }
+
+      .footer-1 .mylogo {
+         border-radius: 150px;
+      }
+
+      @keyframes footer-1-animation {
+         from {
+            transform: scale(0);
+         }
+
+         to {
+            transform: scale(1);
+         }
+      }
+
+      .main-footer .footer-2 {
+         border: 1px solid white;
+         border: none;
+         display: grid;
+         justify-content: center;
+         align-content: center;
+         /* width: 99%; */
+         /* padding: 70px 0px 20px; */
+      }
+
+      .footer-2 .social-icon {
+         display: flex;
+         justify-content: center;
+      }
+
+      .social-icon a {
+         text-decoration: none;
+         padding: 10px;
+         background-color: white;
+         margin: 10px;
+         border-radius: 50px;
+      }
+
+      .social-icon a i {
+         font-size: 2am;
+         color: black;
+         opacity: 0.9;
+      }
+
+      .social-icon a:hover {
+         background-color: #111;
+         transition: 0.5s;
+      }
+
+      .social-icon a:hover i {
+         color: white;
+         transition: 0.5s;
+      }
+
+      .footer-nav {
+         margin: 30px 0;
+      }
+
+      .footer-nav ul {
+         display: flex;
+         justify-content: center;
+      }
+
+      .footer-nav ul li a {
+         color: white;
+         margin: 20px;
+         text-decoration: none;
+         font-size: 1.3am;
+         opacity: 0.7;
+         transition: 0.5s;
+      }
+
+      .footer-nav ul li a:hover {
+         opacity: 1;
+      }
+
+      .footer-bottom {
+         background-color: black;
+         padding: 20px;
+         text-align: center;
+      }
+
+      .footer-bottom p {
+         color: white;
+      }
+
+      .designer {
+         opacity: 0.7;
+         letter-spacing: 1px;
+         font-weight: 400;
+         margin: 0px 5px;
+      }
+
+      .container-1 {
+         border: 1px solid;
+         /* width: 99%; */
+         /* height: 100%; */
+         border: none;
+         text-align: justify;
+         padding: 20px 0px 20px 0px;
+         flex-wrap: wrap;
+         font-size: 20px;
+         backdrop-filter: blur(20px);
+         margin: 0% 11% 0% 10%;
+      }
+
+      .container-1 img {
+         border-radius: 30px;
+      }
+
+      .container-1 p {
+         text-indent: 55px;
+      }
+
+      p::first-letter {
+         font-size: 25px;
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 480px) {
+         .container {
+
+            height: 50px;
+            border-bottom-right-radius: 0px;
+         }
+
+         .container .brand {
+            font-size: 20%;
+            margin-top: 70px;
+            width: 300px;
+         }
+
+         /* .container .main-menu
   {
     
   } */
-  .main-menu .menu
-  {
-   display: none;
-  }
-  .main-menu .bar
-  {
-   font-size: 50%;
-   margin-left: 110px;
-   margin-top: 10px;
-    display: block;
-    margin-bottom: 20px;
-  }
-  .sidebar
-  {
-   height: 200px;
-   width: 305px;
-   border-bottom-right-radius: 50px;
-  }
-  .sidebar .mm .xbar
-      {
-      margin-left: 100px;
-      color: white;
-      } 
-  .mm .m
-  {
-   row-gap: 3px;
-  }
-  .mm .m .item9 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item10 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item11 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item12 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item13 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item14 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item15 a
-  {
-   font-size: 10%;
-  }
-  .mm .m .item16 a
-  {
-   font-size: 10%;
-  }
-.container-1
-{
-   font-size: small;
-}
-.container-1 h1
-{
-   font-size: large;
-   font-weight:900;
-   
-}
-.container-1 img
-{
-   width: 200px;
-   height: 200px;
-}
-.container-1 p
-{
-    text-indent: 55px;
-}
-p::first-letter
-{
-    font-size: 25px;
-}
-.main-footer
-{
-   /* width: 925px;  */
-   height: 200px;
-    border: 1px solid gray;
-    display: flex;
-    border-top-left-radius: 50px;
-    column-gap: 00px;
-    margin-top: 50px;
-    background-color: black;  
-     
-}
-.main-footer .footer-1
-    {
-      border: 1px solid white;
-      border: none;
-      color: white;
-      /* height: 300px;
-      width: 300px; */
-      animation-name: footer-1-animation;
-               animation-duration: 5s;
-      animation-iteration-count: infinite;
-    }
-    .footer-1 .mylogo{ margin-top: 50px; margin-left: 40px; border-radius: 70px; height: 100px;width: 100px;}
-    @keyframes footer-1-animation
-{
-   from
-   {
-   transform: scale(0);
-   }
-   to
-   {
-     transform: scale(1);
-   }
-}
-.main-footer .footer-2
-{
-   border: 1px solid white;
-   border: none; 
-   display: grid;
-   justify-content: center;
-   align-content: center;
-   /* width: 70%; */
-    /* padding: 70px 0px 20px; */
-}
-.footer-2 .social-icon
-{
-   display: flex;
-   justify-content: center;
-   margin:10px 0px 0px 20px ;
-}
-.social-icon a
-{
-text-decoration: none;
-padding: 3px;
-background-color: white;
-/* margin: 5px; */
-border-radius: 5px;
-}
-.social-icon a i
-{
-   font-size: 10px;
-   color: black;
-   opacity: 0.9;
-}
-.social-icon a:hover
-{
-   background-color: #111;
-   transition: 0.5s;
-}
-.social-icon a:hover i
-{
-color: white;
-transition: 0.5s;
-}
-.footer-nav
-{
-   margin:10px 0px 0px 20px ;
-}
-.footer-nav ul
-{
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
-.footer-nav ul li a
-{
-   
-   margin: 5px;
-   font-size: 10px;
-}
-.footer-bottom
-{
-   background-color: black;
-   padding: 20px;
-   text-align: center;
-}
-.footer-bottom p
-{
-color: white;
-font-size: 10px;
-}
-.designer
-{
-   opacity: 0.7;
-   letter-spacing: 1px;
-   font-weight: 100;
-   margin: 0px 5px;
-}
-}
+         .main-menu .menu {
+            display: none;
+         }
 
-    </style>
+         .main-menu .bar {
+            font-size: 50%;
+            margin-left: 110px;
+            margin-top: 10px;
+            display: block;
+            margin-bottom: 20px;
+         }
+
+         .sidebar {
+            height: 200px;
+            width: 305px;
+            border-bottom-right-radius: 50px;
+         }
+
+         .sidebar .mm .xbar {
+            margin-left: 100px;
+            color: white;
+         }
+
+         .mm .m {
+            row-gap: 3px;
+         }
+
+         .mm .m .item9 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item10 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item11 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item12 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item13 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item14 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item15 a {
+            font-size: 10%;
+         }
+
+         .mm .m .item16 a {
+            font-size: 10%;
+         }
+
+         .container-1 {
+            font-size: small;
+         }
+
+         .container-1 h1 {
+            font-size: large;
+            font-weight: 900;
+
+         }
+
+         .container-1 img {
+            width: 200px;
+            height: 200px;
+         }
+
+         .container-1 p {
+            text-indent: 55px;
+         }
+
+         p::first-letter {
+            font-size: 25px;
+         }
+
+         .main-footer {
+            /* width: 925px;  */
+            height: 200px;
+            border: 1px solid gray;
+            display: flex;
+            border-top-left-radius: 50px;
+            column-gap: 00px;
+            margin-top: 50px;
+            background-color: black;
+
+         }
+
+         .main-footer .footer-1 {
+            border: 1px solid white;
+            border: none;
+            color: white;
+            /* height: 300px;
+      width: 300px; */
+            animation-name: footer-1-animation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+         }
+
+         .footer-1 .mylogo {
+            margin-top: 50px;
+            margin-left: 40px;
+            border-radius: 70px;
+            height: 100px;
+            width: 100px;
+         }
+
+         @keyframes footer-1-animation {
+            from {
+               transform: scale(0);
+            }
+
+            to {
+               transform: scale(1);
+            }
+         }
+
+         .main-footer .footer-2 {
+            border: 1px solid white;
+            border: none;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            /* width: 70%; */
+            /* padding: 70px 0px 20px; */
+         }
+
+         .footer-2 .social-icon {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0px 0px 20px;
+         }
+
+         .social-icon a {
+            text-decoration: none;
+            padding: 3px;
+            background-color: white;
+            /* margin: 5px; */
+            border-radius: 5px;
+         }
+
+         .social-icon a i {
+            font-size: 10px;
+            color: black;
+            opacity: 0.9;
+         }
+
+         .social-icon a:hover {
+            background-color: #111;
+            transition: 0.5s;
+         }
+
+         .social-icon a:hover i {
+            color: white;
+            transition: 0.5s;
+         }
+
+         .footer-nav {
+            margin: 10px 0px 0px 20px;
+         }
+
+         .footer-nav ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+         }
+
+         .footer-nav ul li a {
+
+            margin: 5px;
+            font-size: 10px;
+         }
+
+         .footer-bottom {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+         }
+
+         .footer-bottom p {
+            color: white;
+            font-size: 10px;
+         }
+
+         .designer {
+            opacity: 0.7;
+            letter-spacing: 1px;
+            font-weight: 100;
+            margin: 0px 5px;
+         }
+      }
+   </style>
 </head>
+
 <body>
-    <div class="container">
-      <div class="brand"><h1>Fitness & health <br> Center</h1></div>
-      <div class="main-menu">
-        <ul class="menu">
-         <li class="item1"><a href="My-project.html">Home</a></li>
-         <li class="item2"><a href="workouts.html">Workout</a></li>
-         <!-- <li class="item3"><a href="">Home-Workout</a></li> -->
-         <li class="item4"><a href="Cardio.html">Cardio</a></li>
-         <li class="item5"><a href="Mobility.html">Mobility</a></li>
-         <li class="item6"><a href="Yoga.html">Yoga</a></li>
-         <li class="item7"><a href="Diet-plan.html">Diet-Plan</a></li>
-         <li class="item8"><a href="Diet-Recipes.html">Diet-Food</a></li>
-        </ul>
-        <div class="bar" onclick=showsidebar()><i class="fa-solid fa-bars"></i></div>
+   <div class="container">
+      <div class="brand">
+         <h1>Fitness & health <br> Center</h1>
       </div>
-       </div>
-       <div class="sidebar">
-         <div class="mm">
-            <div class="xbar"><i onclick=hidesidebar() class="fa-solid fa-xmark"></i></div>
-           <ul class="m">
-            <li class="item9"><a href="My-project.html">Home</a></li>
+      <div class="main-menu">
+         <ul class="menu">
+            <li class="item1"><a href="index.html">Home</a></li>
+            <li class="item2"><a href="workouts.html">Workout</a></li>
+            <!-- <li class="item3"><a href="">Home-Workout</a></li> -->
+            <li class="item4"><a href="Cardio.html">Cardio</a></li>
+            <li class="item5"><a href="Mobility.html">Mobility</a></li>
+            <li class="item6"><a href="Yoga.html">Yoga</a></li>
+            <li class="item7"><a href="Diet-plan.html">Diet-Plan</a></li>
+            <li class="item8"><a href="Diet-Recipes.html">Diet-Food</a></li>
+         </ul>
+         <div class="bar" onclick=showsidebar()><i class="fa-solid fa-bars"></i></div>
+      </div>
+   </div>
+   <div class="sidebar">
+      <div class="mm">
+         <div class="xbar"><i onclick=hidesidebar() class="fa-solid fa-xmark"></i></div>
+         <ul class="m">
+            <li class="item9"><a href="index.html">Home</a></li>
             <li class="item10"><a href="workouts.html">Workout</a></li>
             <!-- <li class="item3"><a href="">Home-Workout</a></li> -->
             <li class="item11"><a href="Cardio.html">Cardio</a></li>
@@ -635,95 +645,114 @@ font-size: 10px;
             <li class="item13"><a href="Yoga.html">Yoga</a></li>
             <li class="item14"><a href="Diet-plan.html">Diet-Plan</a></li>
             <li class="item15"><a href="Diet-Recipes.html">Diet-Food</a></li>
-           </ul>
-         </div>
-          </div>
-          <script>
-            function showsidebar()
-             {
-               const sidebar = document.querySelector('.sidebar')
-               sidebar.style.display ='flex'
-            }
-            function hidesidebar()
-             {
-               const sidebar = document.querySelector('.sidebar')
-               sidebar.style.display ='none'
-            }
-   
-          </script>
-        <div class="container-1">
-            <h1>Top 10 Healthiest Low Fat Foods for Weight Loss</h1>
-            <p>Low-fat foods are dietary products or items that contain a reduced amount of fat compared to their regular counterparts. These foods are specifically formulated or prepared to contain a lower percentage of fat by weight or calories. The term "low fat" typically refers to products that have undergone a process to remove or reduce the fat content while maintaining their overall nutritional value. Low-fat foods are often sought after by individuals aiming to manage their caloric intake, reduce saturated fat consumption, or adhere to dietary guidelines promoting a healthier lifestyle. It's important to note that while these foods contain less fat, they might sometimes have added sugars or other ingredients to enhance flavor, so it's important to read labels and consider the overall nutritional profile.
-                Sure, here's a list of 10 low-fat foods that can be incorporated into a healthy diet:
-                </p>
+         </ul>
+      </div>
+   </div>
+   <script>
+      function showsidebar() {
+         const sidebar = document.querySelector('.sidebar')
+         sidebar.style.display = 'flex'
+      }
+      function hidesidebar() {
+         const sidebar = document.querySelector('.sidebar')
+         sidebar.style.display = 'none'
+      }
 
-            <h2>1. Chicken Breast:</h2>
-            <img src="./Low fat/Skinless Chicken or Turkey Breast.jpg" alt="" height="300" width="300">
-            <p>Skinless, boneless chicken breast is a lean source of protein and is low in fat, especially when baked, grilled, or boiled.</p> 
+   </script>
+   <div class="container-1">
+      <h1>Top 10 Healthiest Low Fat Foods for Weight Loss</h1>
+      <p>Low-fat foods are dietary products or items that contain a reduced amount of fat compared to their regular
+         counterparts. These foods are specifically formulated or prepared to contain a lower percentage of fat by
+         weight or calories. The term "low fat" typically refers to products that have undergone a process to remove or
+         reduce the fat content while maintaining their overall nutritional value. Low-fat foods are often sought after
+         by individuals aiming to manage their caloric intake, reduce saturated fat consumption, or adhere to dietary
+         guidelines promoting a healthier lifestyle. It's important to note that while these foods contain less fat,
+         they might sometimes have added sugars or other ingredients to enhance flavor, so it's important to read labels
+         and consider the overall nutritional profile.
+         Sure, here's a list of 10 low-fat foods that can be incorporated into a healthy diet:
+      </p>
 
-            <h2>2. Fish:</h2>
-            <img src="./Low fat/Fish.jpg" alt="" height="300" width="300">
-            <p>Many types of fish, such as cod, haddock, and tilapia, are low in fat and high in protein. Fatty fish like salmon and trout are also great choices due to their healthy omega-3 fatty acids.</p> 
+      <h2>1. Chicken Breast:</h2>
+      <img src="./Low fat/Skinless Chicken or Turkey Breast.jpg" alt="" height="300" width="300">
+      <p>Skinless, boneless chicken breast is a lean source of protein and is low in fat, especially when baked,
+         grilled, or boiled.</p>
 
-            <h2>3.Greek Yogurt:</h2>
-            <img src="./Low fat/Greek Yogurt.jpg" alt="" height="300" width="300">
-            <p>Greek yogurt is rich in protein and lower in fat compared to regular yogurt. Opt for plain, unsweetened varieties for the best nutritional value.</p> 
+      <h2>2. Fish:</h2>
+      <img src="./Low fat/Fish.jpg" alt="" height="300" width="300">
+      <p>Many types of fish, such as cod, haddock, and tilapia, are low in fat and high in protein. Fatty fish like
+         salmon and trout are also great choices due to their healthy omega-3 fatty acids.</p>
 
-            <h2>4. Cottage Cheese:</h2>
-            <img src="./Low fat/Cottage Cheese.jpg" alt="" height="300" width="300">
-            <p>Cottage cheese is another protein-rich option that's low in fat. It can be eaten on its own, mixed with fruit, or used as a topping.</p> 
+      <h2>3.Greek Yogurt:</h2>
+      <img src="./Low fat/Greek Yogurt.jpg" alt="" height="300" width="300">
+      <p>Greek yogurt is rich in protein and lower in fat compared to regular yogurt. Opt for plain, unsweetened
+         varieties for the best nutritional value.</p>
 
-            <h2>5. Egg Whites:</h2> 
-            <img src="./Low fat/Egg Whites.jpg" alt="" height="300" width="300">
-            <p>Egg whites are a fantastic source of protein and are virtually fat-free. They can be used in cooking and baking as a lower-fat alternative to whole eggs.</p> 
+      <h2>4. Cottage Cheese:</h2>
+      <img src="./Low fat/Cottage Cheese.jpg" alt="" height="300" width="300">
+      <p>Cottage cheese is another protein-rich option that's low in fat. It can be eaten on its own, mixed with fruit,
+         or used as a topping.</p>
 
-            <h2>6. Beans and Legumes:</h2> 
-            <img src="./Low fat/Beans and Legumes.jpg" alt="" height="300" width="300">
-            <p>Beans, lentils, and other legumes are excellent sources of protein and fiber. They're also naturally low in fat.</p> 
+      <h2>5. Egg Whites:</h2>
+      <img src="./Low fat/Egg Whites.jpg" alt="" height="300" width="300">
+      <p>Egg whites are a fantastic source of protein and are virtually fat-free. They can be used in cooking and baking
+         as a lower-fat alternative to whole eggs.</p>
 
-            <h2>7. Vegetables:</h2> 
-            <img src="./Low fat/Vegetables.jpg" alt="" height="300" width="300">
-            <p>Most vegetables are low in fat and calories while being rich in vitamins, minerals, and fiber. Incorporate a variety of colorful vegetables into your meals.</p> 
+      <h2>6. Beans and Legumes:</h2>
+      <img src="./Low fat/Beans and Legumes.jpg" alt="" height="300" width="300">
+      <p>Beans, lentils, and other legumes are excellent sources of protein and fiber. They're also naturally low in
+         fat.</p>
 
-            <h2>8. Fruits:</h2> 
-            <img src="./Low fat/Fruits.jpg" alt="" height="300" width="300">
-            <p>Fruits are naturally low in fat and provide essential nutrients, vitamins, and antioxidants. Berries, apples, oranges, and pears are great choices.</p> 
+      <h2>7. Vegetables:</h2>
+      <img src="./Low fat/Vegetables.jpg" alt="" height="300" width="300">
+      <p>Most vegetables are low in fat and calories while being rich in vitamins, minerals, and fiber. Incorporate a
+         variety of colorful vegetables into your meals.</p>
 
-            <h2>9. Whole Grains: </h2> 
-            <img src="./Low fat/Whole Grains.jpg" alt="" height="300" width="300">
-            <p>Whole grains like brown rice, quinoa, oats, and whole wheat products are high in fiber and complex carbohydrates, making them filling and low in fat.</p> 
+      <h2>8. Fruits:</h2>
+      <img src="./Low fat/Fruits.jpg" alt="" height="300" width="300">
+      <p>Fruits are naturally low in fat and provide essential nutrients, vitamins, and antioxidants. Berries, apples,
+         oranges, and pears are great choices.</p>
 
-            <h2>10. Nuts and Seeds:</h2> 
-            <img src="./Low fat/Nuts and Seeds.jpg" alt="" height="300" width="300">
-            <p>While these are higher in fat than some other items on this list, they provide healthy fats, protein, and important nutrients. Just be mindful of portion sizes, as they are calorie-dense.</p>
+      <h2>9. Whole Grains: </h2>
+      <img src="./Low fat/Whole Grains.jpg" alt="" height="300" width="300">
+      <p>Whole grains like brown rice, quinoa, oats, and whole wheat products are high in fiber and complex
+         carbohydrates, making them filling and low in fat.</p>
 
-            <p>Remember that a balanced diet includes a variety of foods from different food groups to ensure you're getting all the necessary nutrients. Additionally, the term "low-fat" doesn't necessarily mean "healthy," as some low-fat processed foods might contain added sugars or other unhealthy ingredients. Always aim for whole, minimally processed foods when making dietary choices.</p>
+      <h2>10. Nuts and Seeds:</h2>
+      <img src="./Low fat/Nuts and Seeds.jpg" alt="" height="300" width="300">
+      <p>While these are higher in fat than some other items on this list, they provide healthy fats, protein, and
+         important nutrients. Just be mindful of portion sizes, as they are calorie-dense.</p>
 
-        </div>
+      <p>Remember that a balanced diet includes a variety of foods from different food groups to ensure you're getting
+         all the necessary nutrients. Additionally, the term "low-fat" doesn't necessarily mean "healthy," as some
+         low-fat processed foods might contain added sugars or other unhealthy ingredients. Always aim for whole,
+         minimally processed foods when making dietary choices.</p>
+
+   </div>
 
 
-       <div class="main-footer" >
-        <div class="footer-1" >
-          <img class="mylogo" src="./logo/Fitness & Health Center-min.jpg" alt="" height="300" width="300">
-        </div>
-        <div class="footer-2">
-        <div class="social-icon">
+   <div class="main-footer">
+      <div class="footer-1">
+         <img class="mylogo" src="./logo/Fitness & Health Center-min.jpg" alt="" height="300" width="300">
+      </div>
+      <div class="footer-2">
+         <div class="social-icon">
             <a href=""><i class="fa-brands fa-facebook"></i></a>
             <a href=""><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-twitter"></i></a>
             <a href=""><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div class="footer-nav">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="About-us.html">About Us</a></li>
-            <li><a href="Contact-us.html">Contact Us</a></li>
-            <li><a href="Terms-and-Conditions.html">Terms and Conditions</a></li>
-            <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
-            <li><a href="Disclaimer.html">Disclaimer</a></li>
-          </ul>
-        </div>
-        </div>
+         </div>
+         <div class="footer-nav">
+            <ul>
+               <li><a href="">Home</a></li>
+               <li><a href="About-us.html">About Us</a></li>
+               <li><a href="Contact-us.html">Contact Us</a></li>
+               <li><a href="Terms-and-Conditions.html">Terms and Conditions</a></li>
+               <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
+               <li><a href="Disclaimer.html">Disclaimer</a></li>
+            </ul>
+         </div>
       </div>
+   </div>
 </body>
+
 </html>
