@@ -245,7 +245,7 @@ body {
 
 /* ------------------------ MEDIA QUERIES ------------------------ */
 
-/* 📱 Mobile Devices (max-width: 600px) */
+
 @media (max-width: 600px) {
   body {
     font-size: 14px;
@@ -312,7 +312,7 @@ body {
   }
 }
 
-/* 💻 Tablet Devices (min-width: 601px) and (max-width: 1024px) */
+
 @media (min-width: 601px) and (max-width: 1024px) {
   .main-header-1 {
     flex-direction: column;
@@ -352,7 +352,7 @@ body {
   }
 }
 
-/* 🖥️ Laptop / Desktop (min-width: 1025px) */
+
 @media (min-width: 1025px) {
   .container-2 {
     grid-template-columns: repeat(3, 1fr);
