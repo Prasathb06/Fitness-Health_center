@@ -1,884 +1,364 @@
-body
-{
-   background-color: gray;
+/* ------------------------ BASE STYLES ------------------------ */
+body {
+  background-color: gray;
+  margin: 0;
+  padding: 0;
 }
-.main-header-1
-{
-   border: 1px solid black;
-   border: none;
-   background-image: url("./gym-backgrund-img/12345.jpg");
-   background-repeat: no-repeat;
-   display: flex;
+
+.main-header-1 {
+  background-image: url("./gym-backgrund-img/12345.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
 }
-.main-header-1 .header-1
-{
-   border: 1px solid blue;
-   border: none;
-   width: 600px;
-   color: white;
-   animation-name: header-1-animation;
-            animation-duration: 5s;
-   animation-iteration-count: infinite;
+
+.main-header-1 .header-1 {
+  width: 600px;
+  color: white;
+  animation-name: header-1-animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
-@keyframes header-1-animation
-{
-   from
-   {
-   transform: scaleX(1);
-   }
-   to
-   {
-     transform: scaley(0);
-   } 
+
+@keyframes header-1-animation {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
 }
-.main-header-1 .header-2
-{
-   border: 1px solid blue;
-   border: none;
-   width: 800px;
-   display: grid;
-   justify-content: end;
-   align-items: center ;
-   display: flex;
-   column-gap: 20px;
- 
-   
+
+.main-header-1 .header-2 {
+  width: 800px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
 }
- .login a
-{
-   color: white;
-   font-size: 20px;
-   text-decoration: none;
+
+.login a,
+.Register a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
 }
- .login :hover
-{
-   color: red;
+
+.login a:hover,
+.Register a:hover {
+  color: red;
 }
- .Register a
-{
-   color: white;
-   font-size: 20px;
-   text-decoration: none;
+
+/* ------------------------ CONTAINER ------------------------ */
+.container {
+  height: 526px;
+  background-image: url("./gym-backgrund-img/12345.jpg");
+  background-size: cover;
+  border-bottom-right-radius: 150px;
+  text-align: center;
+  padding: 20px;
 }
-.Register :hover
-{
-   color: red;
-} 
-.container
-{
-    border: 1px solid gray;
-    /* width: 99%; */
-    height: 526px;
-    background-image: url("./gym-backgrund-img/12345.jpg");
-    border-bottom-right-radius: 150px;
+
+.container .main-menu {
+  color: white;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.main-menu li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.main-menu li a:hover {
+  color: red;
+}
+
+.container .content {
+  margin-top: 150px;
+  font-size: 150%;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 10px 10px 5px black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* ------------------------ WORKOUT SECTIONS ------------------------ */
+.container-2 {
+  margin-top: 30px;
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  border: none;
+}
+
+.container-2 > div {
+  border-radius: 20px;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  border: none;
+  box-shadow: 5px 5px 5px;
+  transition: transform 0.3s;
+}
+
+.container-2 img {
+  border-radius: 20px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.container-2 h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+}
+
+.container-2 a {
+  text-decoration: none;
+}
+
+.container-2 > div:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+/* ------------------------ FOOTER ------------------------ */
+.main-footer {
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top-left-radius: 150px;
+  margin-top: 50px;
+  background-color: black;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.main-footer .footer-1 {
+  color: white;
+  animation-name: footer-1-animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.footer-1 .mylogo {
+  border-radius: 150px;
+}
+
+@keyframes footer-1-animation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.footer-2 {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-icon a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50px;
+}
+
+.social-icon a i {
+  font-size: 2rem;
+  color: black;
+  opacity: 0.9;
+}
+
+.social-icon a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.social-icon a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.footer-nav {
+  margin: 30px 0;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-nav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footer-nav ul li a:hover {
+  opacity: 1;
+}
+
+.footer-bottom {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: white;
+}
+
+.designer {
+  opacity: 0.7;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+/* ------------------------ MEDIA QUERIES ------------------------ */
+
+/* 📱 Mobile Devices (max-width: 600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .main-header-1 {
+    flex-direction: column;
     text-align: center;
-    
-}
-.container .main-menu
-{
-    border: 1px solid; 
-    /* width: 99%; */
- color: white;
- display: flex;
- list-style: none;
- /* width: 100%; */
- column-gap: 30px;
- border-style: none;
-}
-.main-menu .item1 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.main-menu .item1 :hover
-{
-   color: red;
+  }
 
-}
-.main-menu .item2 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.main-menu .item2 :hover
-{
-   color: red;
-}
-.main-menu .item3 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.main-menu .item3 :hover
-{
-   color: red;
-}
-.main-menu .item4 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.main-menu .item4 :hover
-{
-   color: red;
-}
-.main-menu .item5 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.main-menu .item5 :hover
-{
-   color: red;
-}
-.main-menu .item6 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none; 
-}
-.main-menu .item6 :hover
-{
-   color: red;
-}
-.main-menu .item7 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none; 
-}
-.main-menu .item7 :hover
-{
-   color: red;
-}
-.main-menu .item8 a
-{
-   font-size: 20px;
-   color: white;
-   text-decoration: none;
-}
-.main-menu .item8 :hover
-{
-   
-   color: red;
-}
-.container .content
-{
-    border: 1px solid;
-    /* width: 99%; */
-    margin-top: 150px;
-    font-size: 150%;
-    color: white;
-    font-weight: bolder;
-    text-shadow: 10px 10px 5px black;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    border-style: none;
-   
-}
-.container-2
-{
-   margin-top: 30px;
-border: 1px solid black;
-display: flex;
-display: grid;
-flex-wrap: wrap;
-height: 1500px;
-column-gap: 10px;
-row-gap: 0px;
-margin-top: 30px;
-align-items: center;
-justify-items: center;
-grid-template-columns: repeat(3,1fr);
-border: none;
-}
-.container-2 .workout
-{
-   border: 1px solid black;
-   border-radius: 20px;
-   width: 300px;
-   height: 400px;
-   text-align: center;
-   border: none;
-   box-shadow: 5px 5px 5px ;
-   
-}
-.workout img {border-radius: 20px;}
-.workout a{text-decoration: none;}
-.workout h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white; }
-.workout:hover
-{
-   transform: scaley(1.1) scaleX(1.1);
-   color: red;
-}
-.container-2 .home-workout
-{
-   border: 1px solid black;
-   border-radius: 20px;
-   width: 300px;
-   height: 400px;
-   text-align: center;
-   border: none;
-   box-shadow: 5px 5px 5px ;
-   
-}
-.home-workout img {border-radius: 20px;}
-.home-workout a{text-decoration: none;}
-.home-workout h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white; }
-.home-workout:hover
-{
-   transform: scaley(1.1) scaleX(1.1);
-   color: red;
-}
-.container-2 .cardio
-{
-   border: 1px solid black;
-   border-radius: 20px;
-   width: 300px;
-   height: 400px;
-   text-align: center;
-   border: none;
-   box-shadow: 5px 5px 5px ;
-   
-}
-.cardio img {border-radius: 20px;}
-.cardio a{text-decoration: none;}
-.cardio h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white; }
-.cardio:hover
-{
-   transform: scaley(1.1) scaleX(1.1);
-   color: red;
-}
-.container-2 .mobility
-{
-   border: 1px solid black;
-   border-radius: 20px;
-   width: 300px;
-   height: 400px;
-   text-align: center;
-   border: none;
-   box-shadow: 5px 5px 5px ;
-   
-}
-.mobility img {border-radius: 20px;}
-.mobility a{text-decoration: none;}
-.mobility h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white; }
-.mobility:hover
-{
-   transform: scaley(1.1) scaleX(1.1);
-   color: red;
-}
-.container-2 .yoga
-{
-   border: 1px solid black;
-   border-radius: 20px;
-   width: 300px;
-   height: 400px;
-   text-align: center;
-   border: none;
-   box-shadow: 5px 5px 5px ;
-   
-}
-.yoga img {border-radius: 20px;}
-.yoga a{text-decoration: none;}
-.yoga h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white; }
-.yoga:hover
-{
-   transform: scaley(1.1) scaleX(1.1);
-   color: red;
-}
-.container-2 .diet
-{
-   border: 1px solid black;
-   border-radius: 20px;
-   width: 300px;
-   height: 400px;
-   text-align: center;
-   border: none;
-   box-shadow: 5px 5px 5px ;
-   
-}
-.diet img {border-radius: 20px;}
-.diet a{text-decoration: none;}
-.diet h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white; }
-.diet:hover
-{
-   transform: scaley(1.1) scaleX(1.1);
-   color: red;
-}
-.container-2 .recipes
-{
-   border: 1px solid black;
-   border-radius: 20px;
-   width: 300px;
-   height: 400px;
-   text-align: center;
-   border: none;
-   box-shadow: 5px 5px 5px ;
-   
-}
-.recipes img {border-radius: 20px;}
-.recipes a{text-decoration: none;}
-.recipes h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white; }
-.recipes:hover
-{
-   transform: scaley(1.1) scaleX(1.1);
-   color: red;
-}
-.container-2 .store
-{
-   border: 1px solid black;
-   border-radius: 20px;
-   width: 300px;
-   height: 400px;
-   text-align: center;
-   border: none;
-   box-shadow: 5px 5px 5px ;
-   
-}
-.store img {border-radius: 20px;}
-.store  a{text-decoration: none;}
-.store h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white; }
-.store:hover
-{
-   transform: scaley(1.1) scaleX(1.1);
-   color: red;
-}
-.main-footer
-{
-   /* width: 925px;  */
-   height: 300px;
-    border: 1px solid gray;
-    display: flex;
-    border-top-left-radius: 150px;
-    column-gap: 200px;
-    margin-top: 50px;
-    background-color: black;  
-     
-}
-.main-footer .footer-1
-    {
-      border: 1px solid white;
-      border: none;
-      color: white;
-      /* height: 300px;
-      width: 300px; */
-      animation-name: footer-1-animation;
-               animation-duration: 5s;
-      animation-iteration-count: infinite;
-    }
-    .footer-1 .mylogo{border-radius: 150px;}
-    @keyframes footer-1-animation
-{
-   from
-   {
-   transform: scale(0);
-   }
-   to
-   {
-     transform: scale(1);
-   }
-}
-.main-footer .footer-2
-{
-   border: 1px solid white;
-   border: none; 
-   display: grid;
-   justify-content: center;
-   align-content: center;
-   /* width: 70%; */
-    /* padding: 70px 0px 20px; */
-}
-.footer-2 .social-icon
-{
-   display: flex;
-   justify-content: center;
-}
-.social-icon a
-{
-text-decoration: none;
-padding: 10px;
-background-color: white;
-margin: 10px;
-border-radius: 50px;
-}
-.social-icon a i
-{
-   font-size: 2am;
-   color: black;
-   opacity: 0.9;
-}
-.social-icon a:hover
-{
-   background-color: #111;
-   transition: 0.5s;
-}
-.social-icon a:hover i
-{
-color: white;
-transition: 0.5s;
-}
-.footer-nav
-{
-   margin:30px 0 ;
-}
-.footer-nav ul
-{
-display: flex;
-justify-content: center;
-}
-.footer-nav ul li a
-{
-   color: white;
-   margin: 20px;
-   text-decoration: none;
-   font-size: 1.3am;
-   opacity: 0.7;
-   transition: 0.5s;
-}
-.footer-nav ul li a:hover
-{
-   opacity: 1;
-}
-.footer-bottom
-{
-   background-color: black;
-   padding: 20px;
-   text-align: center;
-}
-.footer-bottom p
-{
-color: white;
-}
-.designer
-{
-   opacity: 0.7;
-   letter-spacing: 1px;
-   font-weight: 400;
-   margin: 0px 5px;
-}
-@media screen and (min-width: 320px) and (max-width: 480px) 
-      {
-         .main-header-1
-{
-   border: 1px solid black;
-   border: none;
-   background-image: url("./gym-backgrund-img/12345.jpg");
-   background-repeat: no-repeat;
-   display: flex;
-}
-.main-header-1 .header-1
-{
-   border: 1px solid blue;
-   border: none;
-   /* width: 600px; */
-   
-   color: white;
-   animation-name: header-1-animation;
-            animation-duration: 5s;
-   animation-iteration-count: infinite;
-}
-@keyframes header-1-animation
-{
-   from
-   {
-   transform: scaleX(1);
-   }
-   to
-   {
-     transform: scaley(0);
-   } 
-}
-.header-1 .brand h1
-{
-   font-size: 10px;
-   margin-top: 20px;
-}
-.main-header-1 .header-2
-{
-   border: 1px solid blue;
-   border: none;
-   /* width: 800px; */
-   
- 
-   
-}
- .login a
-{
-   color: white;
-   font-size: 8px;
-   text-decoration: none;
-  
-}
- .login :hover
-{
-   color: red;
-}
- .Register a
-{
-   color: white;
-   font-size: 8px;
-   text-decoration: none;
-   
-}
-.Register :hover
-{
-   color: red;
-} 
-.header-2 .form input 
-{
-font-size: 5px;
-}
-.header-2 .form button
-{
-   font-size: 5px;
-   }
-.container
-{
-   height:250px;
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
+  .main-header-1 .header-1,
+  .main-header-1 .header-2 {
+    width: 100%;
+  }
 
-}
-.container .main-menu
-{
-    column-gap: 10px;
-}
-.main-menu .item1 a
-{
-   font-size: 8px;
-}
-.main-menu .item2 a
-{
-   font-size: 8px;
-}
-.main-menu .item3 a
-{
-   font-size: 8px;
-}
-.main-menu .item4 a
-{
-   font-size: 8px;
-}
-.main-menu .item5 a
-{
-   font-size: 8px;
-}
-.main-menu .item6 a
-{
-   font-size: 8px;
-   
-}
-.main-menu .item7 a
-{
-   font-size: 8px;
-}
-.main-menu .item8 a
-{
-   font-size: 8px;
-}
-.container .content
-{
-    border: 1px solid;
-     margin-top: 100px;
-    font-size: 9px;
-    font-weight: bolder;
-    text-shadow: 10px 10px 5px black;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    border-style: none;
-   
-}
-.container-2
-{
-   margin-top: 30px;
-border: 1px solid black;
-display: flex;
-display: grid;
-flex-wrap: wrap;
-height: 600px;
-column-gap: 10px;
+  .header-1 {
+    font-size: 18px;
+  }
 
-margin-top: 30px;
-align-items: center;
-justify-items: center;
-grid-template-columns: repeat(2,1fr);
-border: none;
+  .login a,
+  .Register a {
+    font-size: 16px;
+  }
+
+  .container {
+    height: auto;
+    padding: 20px;
+  }
+
+  .container .main-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .main-menu li a {
+    font-size: 16px;
+  }
+
+  .container .content {
+    margin-top: 80px;
+    font-size: 18px;
+  }
+
+  .container-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .container-2 h1 {
+    font-size: 18px;
+  }
+
+  .main-footer {
+    flex-direction: column;
+    height: auto;
+    border-top-left-radius: 0;
+  }
+
+  .footer-nav ul li a {
+    font-size: 14px;
+  }
+
+  .footer-bottom p {
+    font-size: 13px;
+  }
 }
-.container-2 .workout
-{
-   border: 1px solid black;
-   border-radius: 20px;
-   width: 100px;
-   height: 100px;
-   text-align: center;
-   border: none;
-   box-shadow: 5px 5px 5px ;
-   
+
+/* 💻 Tablet Devices (min-width: 601px) and (max-width: 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .main-header-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-header-1 .header-1,
+  .main-header-1 .header-2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .login a,
+  .Register a {
+    font-size: 18px;
+  }
+
+  .main-menu li a {
+    font-size: 18px;
+  }
+
+  .container-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container-2 h1 {
+    font-size: 20px;
+  }
+
+  .main-footer {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .footer-nav ul li a {
+    font-size: 15px;
+  }
 }
-.workout img {border-radius: 20px;width: 100px;height: 100px;}
-.workout a{text-decoration: none;}
-.workout h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white;font-size: 10px; }
-.workout:hover
-{
-   transform: scaley(1.1) scaleX(1.1);
-   color: red;
-}
-.container-2 .home-workout
-{
-   border: 1px solid black;
-   border-radius: 20px;
-   width: 100px;
-   height: 100px;
-   text-align: center;
-   border: none;
-   box-shadow: 5px 5px 5px ;
-   
-}
-.home-workout img
- {
-   border-radius: 20px;
-   width: 100px;
-   height: 100px;
-}
-.home-workout a{text-decoration: none;}
-.home-workout h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white;font-size: 10px; }
-.home-workout:hover
-{
-   transform: scaley(1.1) scaleX(1.1);
-   color: red;
-}
-.container-2 .cardio
-{
-   border: 1px solid black;
-   border-radius: 20px;
-   width: 100px;
-   height: 100px;
-   text-align: center;
-   border: none;
-   box-shadow: 5px 5px 5px ;
-   
-}
-.cardio img 
-{
-   border-radius: 20px;
-   width: 100px;
-   height: 100px;
-}
-.cardio a{text-decoration: none;}
-.cardio h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white; font-size: 10px;}
-.cardio:hover
-{
-   transform: scaley(1.1) scaleX(1.1);
-   color: red;
-}
-.container-2 .mobility
-{
-   border: 1px solid black;
-   border-radius: 20px;
-   width: 100px;
-   height: 100px;
-   text-align: center;
-   border: none;
-   box-shadow: 5px 5px 5px ;
-   
-}
-.mobility img
- {
-   border-radius: 20px;
-   width: 100px;
-   height: 100px;
-}
-.mobility a{text-decoration: none;}
-.mobility h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white; font-size: 10px;}
-.mobility:hover
-{
-   transform: scaley(1.1) scaleX(1.1);
-   color: red;
-}
-.container-2 .yoga
-{
-   border: 1px solid black;
-   border-radius: 20px;
-   width: 100px;
-   height: 100px;
-   text-align: center;
-   border: none;
-   box-shadow: 5px 5px 5px ;
-   
-}
-.yoga img 
-{
-   border-radius: 20px;
-   width: 100px;
-   height: 100px;
-}
-.yoga a{text-decoration: none;}
-.yoga h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white;font-size: 10px; }
-.yoga:hover
-{
-   transform: scaley(1.1) scaleX(1.1);
-   color: red;
-}
-.container-2 .diet
-{
-   border: 1px solid black;
-   border-radius: 20px;
-   width: 100px;
-   height: 100px;
-   text-align: center;
-   border: none;
-   box-shadow: 5px 5px 5px ;
-   
-}
-.diet img {border-radius: 20px;
-   width: 100px;
-   height: 100px;}
-.diet a{text-decoration: none;}
-.diet h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white; font-size: 10px;}
-.diet:hover
-{
-   transform: scaley(1.1) scaleX(1.1);
-   color: red;
-}
-.container-2 .recipes
-{
-   border: 1px solid black;
-   border-radius: 20px;
-   width: 100px;
-   height: 100px;
-   text-align: center;
-   border: none;
-   box-shadow: 5px 5px 5px ;
-   
-}
-.recipes img {border-radius: 20px; width: 100px;
-   height: 100px;}
-.recipes a{text-decoration: none;}
-.recipes h1 {font-family:Georgia, 'Times New Roman', Times, serif; color: white; font-size: 10px;}
-.recipes:hover
-{
-   transform: scaley(1.1) scaleX(1.1);
-   color: red;
-}
-.main-footer
-{
-   /* width: 925px;  */
-   height: 200px;
-    border: 1px solid gray;
-    display: flex;
-    border-top-left-radius: 50px;
-    column-gap: 00px;
-    margin-top: 50px;
-    background-color: black;  
-     
-}
-.main-footer .footer-1
-    {
-      border: 1px solid white;
-      border: none;
-      color: white;
-      /* height: 300px;
-      width: 300px; */
-      animation-name: footer-1-animation;
-               animation-duration: 5s;
-      animation-iteration-count: infinite;
-    }
-    .footer-1 .mylogo{ margin-top: 50px; margin-left: 40px; border-radius: 70px; height: 100px;width: 100px;}
-    @keyframes footer-1-animation
-{
-   from
-   {
-   transform: scale(0);
-   }
-   to
-   {
-     transform: scale(1);
-   }
-}
-.main-footer .footer-2
-{
-   border: 1px solid white;
-   border: none; 
-   display: grid;
-   justify-content: center;
-   align-content: center;
-   /* width: 70%; */
-    /* padding: 70px 0px 20px; */
-}
-.footer-2 .social-icon
-{
-   display: flex;
-   justify-content: center;
-   margin:10px 0px 0px 60px ;
-}
-.social-icon a
-{
-text-decoration: none;
-padding: 3px;
-background-color: white;
-/* margin: 5px; */
-border-radius: 5px;
-}
-.social-icon a i
-{
-   font-size: 10px;
-   color: black;
-   opacity: 0.9;
-}
-.social-icon a:hover
-{
-   background-color: #111;
-   transition: 0.5s;
-}
-.social-icon a:hover i
-{
-color: white;
-transition: 0.5s;
-}
-.footer-nav
-{
-   margin:10px 0px 0px 70px ;
-}
-.footer-nav ul
-{
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
-.footer-nav ul li a
-{
-   color: white;
-   margin: 5px;
-   text-decoration: none;
-   font-size: 10px;
-   opacity: 0.7;
-   transition: 0.5s;
-}
-.footer-nav ul li a:hover
-{
-   opacity: 1;
-}
-.footer-bottom
-{
-   background-color: black;
-   padding: 20px;
-   text-align: center;
-}
-.footer-bottom p
-{
-color: white;
-font-size: 10px;
-}
-.designer
-{
-   opacity: 0.7;
-   letter-spacing: 1px;
-   font-weight: 100;
-   margin: 0px 5px;
-}
+
+/* 🖥️ Laptop / Desktop (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .container-2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main-header-1 {
+    flex-direction: row;
+  }
 }
